@@ -1,0 +1,85 @@
+# project.yml — XcodeGen spec for AgenticLex (internal code name: ClaudeCodeLex)
+# Regenerate the Xcode project with:  xcodegen generate
+#
+# Display name is AgenticLex (App Store); target/module stays ClaudeCodeLex.
+
+name: ClaudeCodeLex
+
+options:
+  bundleIdPrefix: com.gotman
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.1.0"
+    CURRENT_PROJECT_VERSION: "6"
+
+targets:
+  ClaudeCodeLex:
+    type: application
+    platform: iOS
+    sources:
+      - path: ClaudeCodeLex/App
+      - path: ClaudeCodeLex/Models
+      - path: ClaudeCodeLex/Services
+      - path: ClaudeCodeLex/Views
+      - path: ClaudeCodeLex/Resources
+        excludes:
+          # v1 deprecated stub — must NOT ship in the bundle (CLAUDE.md red line)
+          - terms.json
+    info:
+      path: ClaudeCodeLex/Info.plist
+      properties:
+        CFBundleDisplayName: AgenticLex
+        UILaunchScreen: {}
+        UIRequiresFullScreen: true
+        ITSAppUsesNonExemptEncryption: false
+        # Shadow Read — speech recognition runs on-device (SpeechRecognizer).
+        NSMicrophoneUsageDescription: "AgenticLex uses the microphone for Shadow Read, so you can practise saying a term out loud. Audio is processed on your device."
+        NSSpeechRecognitionUsageDescription: "AgenticLex recognises the word you say during Shadow Read — on your device — to give friendly pronunciation feedback."
+        # Version SoT: keep Info.plist referencing build settings so a bump
+        # in `settings.base` (below) actually reaches the app bundle.
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        UIBackgroundModes:
+          - audio
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gotman.agenticlex
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: "NO"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        # Distribution signing for Archive / TestFlight (ROADMAP §4.4).
+        # Simulator builds skip signing regardless of these settings.
+        DEVELOPMENT_TEAM: YOUR_TEAM_ID
+        CODE_SIGN_STYLE: Automatic
+
+  ClaudeCodeLexTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: ClaudeCodeLex/Tests
+    dependencies:
+      - target: ClaudeCodeLex
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gotman.agenticlex.tests
+
+schemes:
+  ClaudeCodeLex:
+    build:
+      targets:
+        ClaudeCodeLex: all
+    run:
+      # StoreKit config so the Tip Jar IAPs load in the simulator
+      # (local testing + IAP review screenshots). Archive ignores this.
+      storeKitConfiguration: ClaudeCodeLex/Resources/Tips.storekit
+    test:
+      targets:
+        - ClaudeCodeLexTests

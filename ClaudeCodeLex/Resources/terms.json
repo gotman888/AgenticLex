@@ -1,0 +1,10 @@
+{
+  "_DEPRECATED": "This file is v1 schema and is no longer used.",
+  "_MIGRATED_TO": [
+    "terms.en.json (main + categories + term metadata)",
+    "terms.zh-TW.json (Traditional Chinese translations)",
+    "terms.<locale>.json (other locales as they're added)"
+  ],
+  "_ACTION_REQUIRED": "Do NOT include this file in your Xcode bundle. Only include terms.en.json and terms.<locale>.json files.",
+  "_SAFE_TO_DELETE": true
+}

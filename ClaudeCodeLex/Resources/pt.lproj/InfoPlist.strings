@@ -1,0 +1,3 @@
+/* Localized Info.plist usage strings — Shadow Read (Speech framework). */
+"NSMicrophoneUsageDescription" = "A AgenticLex usa o microfone na Leitura em eco para praticares a dizer um termo em voz alta. O áudio é processado no teu dispositivo.";
+"NSSpeechRecognitionUsageDescription" = "A AgenticLex reconhece a palavra que dizes durante a Leitura em eco — no teu dispositivo — para dar feedback amigável de pronúncia.";

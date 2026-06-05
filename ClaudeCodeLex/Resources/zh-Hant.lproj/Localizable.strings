@@ -1,0 +1,295 @@
+// 繁體中文 (zh-TW / zh-Hant)
+
+"app.name"     = "AgenticLex";
+"app.tagline"  = "讀懂 AI 編程的英文";
+
+"today.tab"    = "今日";
+"browse.tab"   = "瀏覽";
+"quiz.tab"     = "測驗";
+"settings.tab" = "設定";
+
+"today.subtitle"       = "Lexi 幫你準備了幾個詞 ☕";
+"today.picks"          = "今日推薦";
+"today.start"          = "開始學習";
+"today.listen"         = "聽力模式";
+"today.random"         = "隨機驚喜";
+"today.allDone"        = "今天都學完了！🌱 休息一下吧";
+"today.wotd"           = "今日精選詞";
+"today.recentMastered" = "最近學會";
+"today.noMastered"     = "你學會的第一個詞會永遠記得 🌱";
+
+// 親切的問候，依時段變化
+"today.greet.morning"   = "早安！今天來認識幾個新朋友吧";
+"today.greet.noon"      = "嗨！吃飯空檔背幾個詞？";
+"today.greet.afternoon" = "下午好，繼續加油 🚀";
+"today.greet.evening"   = "傍晚啦，再一個詞就收工";
+"today.greet.night"     = "Lexi 還沒睡，一起來學？🦉";
+
+"browse.searchPrompt"  = "搜尋詞彙…";
+"browse.noResults" = "找不到符合的詞，換個關鍵字試試。";
+
+"category.all"        = "全部";
+
+"detail.translation"  = "翻譯";
+"detail.example"      = "實際用法";
+"detail.memoryHook"   = "記憶法";
+"detail.realUse"      = "真實用法";
+"detail.commonConfusion" = "容易混淆";
+"detail.related"      = "相關詞";
+"detail.fav"          = "收藏";
+"detail.unfav"        = "取消收藏";
+"detail.markMastered" = "標記為已學會";
+"detail.share"        = "分享";
+
+// Concept Map
+"conceptMap.title" = "概念圖";
+"conceptMap.hint"  = "點節點探索關聯詞";
+
+"quiz.setup.count"     = "題數";
+"quiz.setup.direction" = "題型";
+"quiz.setup.start"     = "開始測驗";
+"quiz.dir.enToL1"      = "英文 → 母語";
+"quiz.dir.l1ToEn"      = "母語 → 英文";
+"quiz.dir.mixed"       = "混合";
+"quiz.result.perfect"  = "滿分！Lexi 為你驕傲 🎉";
+"quiz.result.good"     = "做得好！";
+"quiz.result.tryAgain" = "沒關係，再來一回合 💪";
+"quiz.result.backHome" = "回首頁";
+
+"review.next" = "下一個";
+"review.done" = "今天的份學完了！";
+
+"settings.section.learning"   = "學習";
+"settings.section.audio"      = "聲音";
+"settings.section.appearance" = "外觀";
+"settings.section.data"       = "資料";
+"settings.section.about"      = "關於";
+
+"settings.uiLanguage"     = "介面語言";
+"settings.nativeLanguage" = "我的母語";
+"settings.dailyGoal"      = "每日目標";
+"settings.speed"          = "朗讀速度";
+"settings.autoplay"       = "進入詞彙自動播放";
+"settings.theme"          = "主題";
+"settings.theme.auto"     = "跟隨系統";
+"settings.theme.light"    = "淺色";
+"settings.theme.dark"     = "深色";
+"settings.resetAll"       = "重設所有學習進度";
+"settings.resetConfirm"   = "這會清空所有學習記錄，無法復原。";
+"settings.version"        = "版本";
+"settings.github"         = "GitHub 開源頁";
+"settings.privacy"        = "隱私權政策";
+"settings.feedback"       = "提供回饋";
+"detail.aiTranslation" = "AI 翻譯 — 尚未人工審校";
+"detail.report" = "回報問題或建議修正";
+"feedback.subject" = "AgenticLex 意見回饋";
+"report.intro" = "有什麼可以更好？在下面描述後送出。（請保留底部資訊，方便我們協助你。）";
+
+// Notifications
+"settings.section.notifications" = "通知";
+"settings.notify.daily"          = "每日提醒";
+"settings.notify.time"           = "提醒時間";
+"notify.daily.title"             = "Lexi 想你了 🦉";
+"notify.daily.body"              = "今天背幾個詞？Lexi 在等你。";
+"notify.daily.body.streak"       = "別讓 %d 天連續紀錄斷掉！🔥";
+
+"common.cancel" = "取消";
+"common.ok"     = "好";
+"common.retry"  = "重試";
+
+"a11y.playPronunciation" = "播放發音";
+
+// Onboarding
+"onboarding.back"            = "上一步";
+"onboarding.next"            = "下一步";
+"onboarding.start"           = "開始學習";
+"onboarding.disclaimer.title" = "獨立 app，與 Anthropic 無關聯";
+"onboarding.disclaimer.body"  = "AgenticLex 為非官方學習工具。Claude™ 與 Claude Code™ 為 Anthropic PBC 的商標；Cursor™ 為 Anysphere Inc. 的商標。本 app 所引用之商標僅作描述性用途。";
+"onboarding.lang.title"      = "選擇你的語言";
+"onboarding.lang.subtitle"   = "介面語言與母語故意分開，許多人想要英文介面但母語翻譯。";
+"onboarding.uiLang.label"    = "App 介面語言";
+"onboarding.uiLang.help"     = "選單、按鈕、標籤使用的語言。";
+"onboarding.nativeLang.label" = "我的母語";
+"onboarding.nativeLang.help"  = "每個英文詞旁邊顯示的翻譯、定義、記憶法用此語言。";
+"onboarding.comingSoon"      = "即將推出";
+"onboarding.goal.title"      = "每日目標";
+"onboarding.goal.subtitle"   = "一天學幾個詞？之後隨時可改。";
+"onboarding.goal.relaxed"    = "詞 / 天 — 輕鬆步調";
+"onboarding.goal.regular"    = "詞 / 天 — 推薦";
+"onboarding.goal.serious"    = "詞 / 天 — 認真學";
+"onboarding.goal.intense"    = "詞 / 天 — 衝刺模式";
+
+// Tip Jar
+"settings.section.support"   = "支持開發";
+"tipjar.title"               = "請我喝杯咖啡";
+"tipjar.subtitle"            = "AgenticLex 永久免費。如果幫到你，一杯咖啡支持持續更新。";
+"tipjar.tier.small"          = "小小心意";
+"tipjar.tier.medium"         = "支持一個月的更新";
+"tipjar.tier.large"          = "贊助一季的開發";
+"tipjar.lifetimeFmt"         = "你累計贊助約 $%.2f — 感謝你 🙏";
+"tipjar.note"                = "100% 自願贊助。無任何功能會被鎖。";
+"tipjar.unavailable"         = "無法載入贊助選項，請檢查網路連線後重試。";
+"tipjar.thanks.title"        = "謝謝你 ❤️";
+"tipjar.thanks.body"         = "你的支持讓 AgenticLex 持續免費並成長。";
+
+// Term detail
+"term.englishOnly.note"      = "業界慣用英文";
+
+// Onboarding 加碼
+"onboarding.lexi.intro"     = "嗨！我是 Lexi，陪你一起學 🦉";
+
+// Audio
+"audio.speed.label"          = "朗讀速度";
+"audio.speed.slow"           = "慢";
+"audio.speed.normal"         = "正常";
+"audio.speed.fast"           = "快";
+"a11y.longPressForSpeed"     = "長按選速度";
+
+// Listen Mode
+"listen.tab"      = "聽力模式";
+"listen.title"    = "聽力模式";
+"listen.subtitle" = "純聽，不用盯螢幕。";
+"listen.start"    = "開始聽";
+"listen.stop"     = "停止";
+"listen.hint"     = "可在背景播放，建議戴耳機。按播放、鎖螢幕、走路也能學。";
+
+// Celebration
+"celebration.cool" = "讚！";
+
+// 徽章
+"achv.title"          = "成就";
+"achv.subtitle.fmt"   = "已解鎖 %d / %d";
+"achv.firstWord.title" = "第一個詞";
+"achv.firstWord.desc"  = "學會你的第一個詞";
+"achv.bookworm.title"  = "書蟲";
+"achv.bookworm.desc"   = "學會 10 個詞";
+"achv.scholar.title"   = "學者";
+"achv.scholar.desc"    = "學會 30 個詞";
+"achv.master.title"    = "大師";
+"achv.master.desc"     = "字典裡的詞全學會";
+"achv.spark.title"     = "火花";
+"achv.spark.desc"      = "連續 3 天";
+"achv.flame.title"     = "火焰";
+"achv.flame.desc"      = "連續 7 天";
+"achv.blaze.title"     = "烈焰";
+"achv.blaze.desc"      = "連續 30 天";
+"achv.nightOwl.title"  = "夜貓子";
+"achv.nightOwl.desc"   = "半夜 0-4 點學習";
+"achv.earlyBird.title" = "早起鳥";
+"achv.earlyBird.desc"  = "早上 5-8 點學習";
+"achv.coffeeHelper.title" = "請咖啡的朋友";
+"achv.coffeeHelper.desc"  = "贊助讓 Lexi 繼續成長";
+
+// ===== AI Boost (用自己的 API key) =====
+"aiboost.title"           = "AI 升級";
+"aiboost.active"          = "已啟用";
+"aiboost.intro"           = "用你自己的 API key 讓 Lexi 更強。我們不會看到你的 key，請求直接送到 provider。";
+"aiboost.voice.section"   = "更好聽的語音";
+"aiboost.voice.footer"    = "雲端語音自然度高出許多，費用記在你自己的帳號上。";
+"aiboost.chat.section"    = "問 Lexi (對話)";
+"aiboost.chat.footer"     = "用你偏好的 AI 真的跟 Lexi 對話、聊任何詞。";
+"aiboost.free"            = "免費";
+"aiboost.keyPlaceholder"  = "貼上你的 API key";
+"aiboost.save"            = "儲存";
+"aiboost.getKey"          = "取得 API key";
+"aiboost.voicePicker"     = "語音";
+"aiboost.modelPicker"     = "模型";
+"aiboost.test"            = "試聽";
+"aiboost.testing"         = "測試中…";
+"aiboost.testOK"          = "聲音很棒 ✨";
+"aiboost.testFailed"      = "測試失敗，檢查 key";
+"aiboost.privacy"         = "API key 存在 iOS 鑰匙圈，請求直接送到 AI provider，不經過 AgenticLex 伺服器。";
+
+"aiboost.disclosure.title" = "BYOK 怎麼運作";
+"aiboost.disclosure.body"  = "你的 API key 會存在 iOS 鑰匙圈，AgenticLex 永遠看不到。所有請求直接送到你選的 AI provider。請參考該 provider 的隱私政策。";
+
+// 費用提示
+"ai.cost.free"             = "免費 · 離線";
+"ai.cost.openaiTTS"        = "約 NT$0.01 / 詞 · OpenAI 計費";
+"ai.cost.elevenlabs"       = "約 NT$0.1 / 詞 · ElevenLabs 計費";
+
+// ===== Ask Lexi =====
+"askLexi.title"            = "問 Lexi";
+"askLexi.button.title"     = "💬 跟 Lexi 聊這個詞";
+"askLexi.button.hint"      = "用你的 AI key，跟 Lexi 對話";
+"askLexi.intro"            = "嗨！這個詞有任何問題都可以問我 — 例句、code、比較都行 🦉";
+"askLexi.inputPlaceholder" = "問任何問題…";
+"askLexi.errorTitle"       = "連不到 AI";
+"askLexi.qp.eli5"          = "用最簡單方式解釋";
+"askLexi.qp.examples"      = "再給我例子";
+"askLexi.qp.code"          = "給 code 範例";
+"askLexi.qp.compare"       = "對比相似詞";
+"askLexi.poweredBy.claude" = "Claude 驅動 · 你的 key";
+"askLexi.poweredBy.openai" = "GPT 驅動 · 你的 key";
+"askLexi.poweredBy.gemini" = "Gemini 驅動 · 你的 key";
+
+// Siri 捷徑
+"siri.wotd.title"   = "今日單字";
+"siri.wotd.desc"    = "開啟 AgenticLex 看今日單字";
+"siri.listen.title" = "聽力模式";
+"siri.listen.desc"  = "在 AgenticLex 開始聽力模式";
+
+// 學習路徑
+"path.title"             = "學習路徑";
+"path.intro"             = "一級一級把詞學起來，照自己的步調。";
+"path.levelNumFmt"       = "第 %d 級";
+"path.level.foundations" = "基礎";
+"path.level.core"        = "核心概念";
+"path.level.advanced"    = "進階";
+"path.progressFmt"       = "已學會 %d / %d";
+"path.complete"          = "完成！";
+
+// 跟讀練習
+"today.shadow"           = "跟讀練習";
+"shadow.intro"           = "聽每個詞，再跟著唸一次。Lexi 會陪你一起練。";
+"shadow.start"           = "開始";
+"shadow.replay"          = "再聽一次";
+"shadow.tapToSpeak"      = "點一下，唸出來";
+"shadow.listening"       = "聆聽中…";
+"shadow.heardFmt"        = "Lexi 聽到：%@";
+"shadow.great"           = "唸得超準！🎉";
+"shadow.close"           = "很接近了，不錯喔！";
+"shadow.tryAgain"        = "這個有點難，再試試 💪";
+"shadow.finish"          = "完成";
+"shadow.summaryFmt"      = "你跟讀了 %d 個詞！";
+"shadow.summaryGreatFmt" = "其中 %d 個唸得超準 🌟";
+"shadow.again"           = "再練一次";
+"shadow.unavailable"     = "跟讀練習需要裝置端語音辨識，這台裝置不支援。其他學習方式都還在喔。🦉";
+
+// 詞庫更新 (OTA)
+"settings.dict.autoUpdate" = "自動更新詞庫";
+"settings.dict.note"       = "開啟後會向 GitHub 查有無新詞。預設關閉 —— app 完全離線也能用。";
+"settings.dict.checking"   = "檢查中…";
+"settings.dict.upToDate"   = "詞庫已是最新";
+"settings.dict.updated"    = "詞庫已更新 —— 下次啟動生效";
+"settings.dict.thanks" = "🌱 謝謝學習者的回饋——你的回報幫忙形塑詞庫。";
+"settings.dict.failed"     = "無法檢查更新";
+
+
+// AI 資料傳輸告知 (Apple 條款 5.1.1(i) / 5.1.2(i))
+"aidisclosure.nav.title" = "AI 資料傳輸告知";
+"aidisclosure.header.title" = "使用 AI 功能前,請先閱讀";
+"aidisclosure.header.body" = "依據 Apple 隱私權審查規範,我們必須在你使用任何 AI 功能前,明確告知資料會傳送給誰、傳什麼、做什麼用。";
+"aidisclosure.sec.send.title" = "我們會傳送什麼資料";
+"aidisclosure.sec.send.body" = "僅限你在 AgenticLex 中輸入並提交給 AI 助手的**文字訊息**。多輪對話時也會帶入必要的對話脈絡,讓 AI 能延續討論。";
+"aidisclosure.sec.recipients.title" = "傳送給誰";
+"aidisclosure.sec.recipients.body" = "視你在「設定 → AI Boost」啟用的供應商而定,以下最多 4 家 third-party AI 服務可能會收到你的輸入:\n\n• **Anthropic, PBC**(美國加州舊金山)— Claude API,提供 AI 對話\n• **OpenAI, L.L.C.**(美國加州舊金山)— GPT 模型對話、TTS 語音播放\n• **Google LLC**(美國加州山景城)— Gemini API,提供 AI 對話\n• **ElevenLabs Inc.**(美國紐約)— TTS 語音播放\n\n只有你主動配置 API 金鑰並啟用的供應商會收到資料;未啟用的供應商完全不會收到任何資料。";
+"aidisclosure.sec.purpose.title" = "用途";
+"aidisclosure.sec.purpose.body" = "**僅用於生成你當次請求的 AI 回應。** 各供應商預設皆不會將 API 資料用於訓練模型;資料最多保留約 30 天供濫用偵測,之後自動刪除。";
+"aidisclosure.sec.notSent.title" = "我們不會傳送的資料";
+"aidisclosure.sec.notSent.body" = "你的 Apple ID、裝置 ID、姓名、聯絡資訊、定位、通訊錄、照片、IDFA 等皆不會被傳送。所有傳輸全程使用 TLS 加密。";
+"aidisclosure.sec.choice.title" = "你的選擇";
+"aidisclosure.sec.choice.body" = "選擇「**不同意**」時 AI 功能將停用,但你仍可使用本 App 的其他所有功能。\n\n你可隨時於「**設定 → 隱私 → AI 資料傳輸同意**」中撤回同意。";
+"aidisclosure.button.privacy" = "查看完整隱私權政策";
+"aidisclosure.button.agree" = "同意並繼續";
+"aidisclosure.button.decline" = "不同意,停用 AI 功能";
+"aidisclosure.settings.section" = "隱私";
+"aidisclosure.settings.row.title" = "AI 資料傳輸同意";
+"aidisclosure.settings.status.accepted" = "已同意";
+"aidisclosure.settings.status.notAccepted" = "未同意";
+"aidisclosure.settings.revoke" = "撤回";
+"aidisclosure.settings.confirm.title" = "撤回同意?";
+"aidisclosure.settings.confirm.message" = "AI 功能將立即停用。你可以稍後重新同意。";
+"aidisclosure.settings.confirm.cancel" = "取消";
+"aidisclosure.settings.confirm.revoke" = "撤回";
+"aidisclosure.error.notConsented" = "AI 功能需要同意才能使用。請至「設定 → 隱私」重新啟用。";

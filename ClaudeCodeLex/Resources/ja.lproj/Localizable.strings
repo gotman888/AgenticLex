@@ -1,0 +1,293 @@
+// 日本語 (ja)
+
+"app.name"     = "AgenticLex";
+"app.tagline"  = "AI コーディングの言葉を、君のものに";
+
+"today.tab"    = "今日";
+"browse.tab"   = "一覧";
+"quiz.tab"     = "クイズ";
+"settings.tab" = "設定";
+
+"today.subtitle"       = "Lexi が今日の単語を用意したよ ☕";
+"today.listen"         = "聴くモード";
+"today.random"         = "ランダム";
+"today.allDone"        = "今日は全部完了！🌱 ひと休み";
+"today.wotd"           = "今日の単語";
+"today.greet.morning"   = "おはよう！新しい単語に会いに行こう";
+"today.greet.noon"      = "こんにちは！お昼に少し？";
+"today.greet.afternoon" = "午後もがんばろう 🚀";
+"today.greet.evening"   = "あと 1 つで今日は終わり";
+"today.greet.night"     = "Lexi も起きてる、一緒に？🦉";
+"today.picks"          = "おすすめ";
+"today.start"          = "今日の学習を始める";
+"today.recentMastered" = "最近マスターした単語";
+"today.noMastered"     = "最初にマスターした単語はここに残ります 🌱";
+
+"browse.searchPrompt"  = "単語を検索…";
+"browse.noResults" = "一致する用語が見つかりません。別の言葉で試してみてください。";
+
+"category.all"        = "すべて";
+
+"detail.translation"  = "翻訳";
+"detail.example"      = "使用例";
+"detail.memoryHook"   = "記憶のコツ";
+"detail.realUse"      = "実際の使い方";
+"detail.commonConfusion" = "間違えやすい";
+"detail.related"      = "関連語";
+"detail.fav"          = "お気に入り";
+"detail.unfav"        = "お気に入り解除";
+"detail.markMastered" = "マスター済みにする";
+"detail.share"        = "共有";
+
+// Concept Map
+"conceptMap.title" = "コンセプトマップ";
+"conceptMap.hint"  = "ノードをタップして関連用語を見る";
+
+"quiz.setup.count"     = "問題数";
+"quiz.setup.direction" = "形式";
+"quiz.setup.start"     = "開始";
+"quiz.dir.enToL1"      = "英語 → 母語";
+"quiz.dir.l1ToEn"      = "母語 → 英語";
+"quiz.dir.mixed"       = "ミックス";
+"quiz.result.perfect"  = "満点！Lexi も大喜び 🎉";
+"quiz.result.good"     = "よくできた！";
+"quiz.result.tryAgain" = "大丈夫、もう一度 💪";
+"quiz.result.backHome" = "ホームへ戻る";
+
+"review.next" = "次へ";
+"review.done" = "今日の分は完了です！";
+
+"settings.section.learning"   = "学習";
+"settings.section.audio"      = "音声";
+"settings.section.appearance" = "外観";
+"settings.section.data"       = "データ";
+"settings.section.about"      = "情報";
+
+"settings.uiLanguage"     = "UI 言語";
+"settings.nativeLanguage" = "母語";
+"settings.dailyGoal"      = "毎日の目標";
+"settings.speed"          = "読み上げ速度";
+"settings.autoplay"       = "開いたら自動再生";
+"settings.theme"          = "テーマ";
+"settings.theme.auto"     = "自動";
+"settings.theme.light"    = "ライト";
+"settings.theme.dark"     = "ダーク";
+"settings.resetAll"       = "学習履歴をリセット";
+"settings.resetConfirm"   = "すべての履歴が消えます。元に戻せません。";
+"settings.version"        = "バージョン";
+"settings.github"         = "GitHub オープンソース";
+"settings.privacy"        = "プライバシーポリシー";
+"settings.feedback"       = "フィードバック送信";
+"detail.aiTranslation" = "AI 翻訳 — 未レビュー";
+"detail.report" = "問題を報告 / 修正を提案";
+"feedback.subject" = "AgenticLex フィードバック";
+"report.intro" = "どこを改善できますか？下に書いて送信してください。（下部の情報はそのまま残してください。）";
+
+// Notifications
+"settings.section.notifications" = "通知";
+"settings.notify.daily"          = "毎日のリマインダー";
+"settings.notify.time"           = "リマインド時刻";
+"notify.daily.title"             = "Lexi が待ってるよ 🦉";
+"notify.daily.body"              = "今日も少し単語を？Lexi が待っています。";
+"notify.daily.body.streak"       = "%d 日連続を切らさないで！🔥";
+
+"common.cancel" = "キャンセル";
+"common.ok"     = "OK";
+"common.retry"  = "再試行";
+
+"a11y.playPronunciation" = "発音を再生";
+
+// Onboarding
+"onboarding.back"            = "戻る";
+"onboarding.next"            = "次へ";
+"onboarding.start"           = "始める";
+"onboarding.disclaimer.title" = "独立アプリ — Anthropic とは無関係";
+"onboarding.disclaimer.body"  = "AgenticLex は非公式の学習アプリです。Claude™ と Claude Code™ は Anthropic PBC の商標です；Cursor™ は Anysphere Inc. の商標です。商標は記述目的のみで使用しています。";
+"onboarding.lang.title"      = "言語を選んでください";
+"onboarding.lang.subtitle"   = "UI 言語と母語は意図的に分けています。英語 UI に母語訳という組み合わせも可能です。";
+"onboarding.uiLang.label"    = "UI 言語";
+"onboarding.uiLang.help"     = "メニュー・ボタン・ラベルに使う言語。";
+"onboarding.nativeLang.label" = "母語";
+"onboarding.nativeLang.help"  = "各英単語の翻訳・定義・記憶のコツに使う言語。";
+"onboarding.comingSoon"      = "近日対応";
+"onboarding.goal.title"      = "毎日の目標";
+"onboarding.goal.subtitle"   = "1 日に何単語学ぶ？いつでも変更できます。";
+"onboarding.goal.relaxed"    = "単語 / 日 — のんびり";
+"onboarding.goal.regular"    = "単語 / 日 — おすすめ";
+"onboarding.goal.serious"    = "単語 / 日 — 本気";
+"onboarding.goal.intense"    = "単語 / 日 — ガチ勢";
+
+// Tip Jar
+"settings.section.support"   = "開発をサポート";
+"tipjar.title"               = "コーヒーをご馳走";
+"tipjar.subtitle"            = "AgenticLex は永久無料。気に入ったら開発支援を。";
+"tipjar.tier.small"          = "ちょっとした感謝";
+"tipjar.tier.medium"         = "1 ヶ月分の更新を支援";
+"tipjar.tier.large"          = "シーズン分の開発を支援";
+"tipjar.lifetimeFmt"         = "累計 $%.2f のサポート — ありがとう 🙏";
+"tipjar.note"                = "100% 任意。機能制限は一切ありません。";
+"tipjar.unavailable"         = "サポートの選択肢を読み込めませんでした。接続を確認して再試行してください。";
+"tipjar.thanks.title"        = "ありがとう ❤️";
+"tipjar.thanks.body"         = "あなたの支援が AgenticLex を無料で成長させ続けます。";
+
+// Term detail
+"term.englishOnly.note"      = "業界は英語で呼ぶ";
+
+// Onboarding
+"onboarding.lexi.intro"     = "やあ！僕は Lexi、君の学習パートナー 🦉";
+
+// Audio
+"audio.speed.label"          = "読み上げ速度";
+"audio.speed.slow"           = "遅い";
+"audio.speed.normal"         = "普通";
+"audio.speed.fast"           = "速い";
+"a11y.longPressForSpeed"     = "長押しで速度選択";
+
+// Listen Mode
+"listen.tab"      = "聴くモード";
+"listen.title"    = "聴くモード";
+"listen.subtitle" = "画面を見なくていい、音声だけ。";
+"listen.start"    = "聴き始める";
+"listen.stop"     = "停止";
+"listen.hint"     = "バックグラウンド再生対応。イヤホン推奨。再生 → ロック → 歩きながら学習。";
+
+// Celebration
+"celebration.cool" = "やった！";
+
+// Achievements
+"achv.title"          = "実績";
+"achv.subtitle.fmt"   = "%d / %d 解除";
+"achv.firstWord.title" = "最初の単語";
+"achv.firstWord.desc"  = "1 つマスター";
+"achv.bookworm.title"  = "本の虫";
+"achv.bookworm.desc"   = "10 個マスター";
+"achv.scholar.title"   = "学者";
+"achv.scholar.desc"    = "30 個マスター";
+"achv.master.title"    = "マスター";
+"achv.master.desc"     = "辞書を完全制覇";
+"achv.spark.title"     = "火花";
+"achv.spark.desc"      = "3 日連続";
+"achv.flame.title"     = "炎";
+"achv.flame.desc"      = "7 日連続";
+"achv.blaze.title"     = "大火";
+"achv.blaze.desc"      = "30 日連続";
+"achv.nightOwl.title"  = "夜更かし";
+"achv.nightOwl.desc"   = "0-4 時に学習";
+"achv.earlyBird.title" = "早起き";
+"achv.earlyBird.desc"  = "5-8 時に学習";
+"achv.coffeeHelper.title" = "コーヒー友達";
+"achv.coffeeHelper.desc"  = "Lexi の活動を応援";
+
+// ===== AI Boost =====
+"aiboost.title"           = "AI ブースト";
+"aiboost.active"          = "有効";
+"aiboost.intro"           = "自分の API キーで Lexi を強化。キーは見ません、リクエストは直接 provider へ。";
+"aiboost.voice.section"   = "より自然な音声";
+"aiboost.voice.footer"    = "クラウド音声は格段に自然。料金はあなたのアカウントに。";
+"aiboost.chat.section"    = "Lexi に聞く";
+"aiboost.chat.footer"     = "好きな AI で単語について本当に会話できます。";
+"aiboost.free"            = "無料";
+"aiboost.keyPlaceholder"  = "API キーを貼付";
+"aiboost.save"            = "保存";
+"aiboost.getKey"          = "キー取得";
+"aiboost.voicePicker"     = "音声";
+"aiboost.modelPicker"     = "モデル";
+"aiboost.test"            = "試聴";
+"aiboost.testing"         = "テスト中…";
+"aiboost.testOK"          = "OK ✨";
+"aiboost.testFailed"      = "失敗 — キー確認";
+"aiboost.privacy"         = "キーは iOS キーチェーンに保存。リクエストは直接 AI provider へ、AgenticLex サーバーは経由しません。";
+
+"aiboost.disclosure.title" = "BYOK の仕組み";
+"aiboost.disclosure.body"  = "API キーは iOS キーチェーンに保存され、AgenticLex は見ません。すべてのリクエストは選択した AI provider に直接送信。provider のプライバシーポリシーをご確認ください。";
+
+// 費用ヒント
+"ai.cost.free"             = "無料 · オフライン";
+"ai.cost.openaiTTS"        = "約 $0.0003/単語 · OpenAI 課金";
+"ai.cost.elevenlabs"       = "約 $0.003/単語 · ElevenLabs 課金";
+
+// ===== Ask Lexi =====
+"askLexi.title"            = "Lexi に聞く";
+"askLexi.button.title"     = "💬 この単語を Lexi に";
+"askLexi.button.hint"      = "あなたの AI キーで対話";
+"askLexi.intro"            = "やあ！この単語、何でも聞いてね 🦉";
+"askLexi.inputPlaceholder" = "何でも聞いて…";
+"askLexi.errorTitle"       = "AI に接続できません";
+"askLexi.qp.eli5"          = "簡単に説明";
+"askLexi.qp.examples"      = "もっと例";
+"askLexi.qp.code"          = "コード例";
+"askLexi.qp.compare"       = "似た単語比較";
+"askLexi.poweredBy.claude" = "Claude · あなたのキー";
+"askLexi.poweredBy.openai" = "GPT · あなたのキー";
+"askLexi.poweredBy.gemini" = "Gemini · あなたのキー";
+
+// Siri ショートカット
+"siri.wotd.title"   = "今日の単語";
+"siri.wotd.desc"    = "AgenticLex を開いて今日の単語を見る";
+"siri.listen.title" = "聴くモード";
+"siri.listen.desc"  = "AgenticLex で聴くモードを開始";
+
+// 学習パス
+"path.title"             = "学習パス";
+"path.intro"             = "レベルごとに、自分のペースで単語をマスター。";
+"path.levelNumFmt"       = "レベル %d";
+"path.level.foundations" = "基礎";
+"path.level.core"        = "コア概念";
+"path.level.advanced"    = "上級";
+"path.progressFmt"       = "%d / %d マスター";
+"path.complete"          = "完了！";
+
+// シャドーイング
+"today.shadow"           = "シャドーイング";
+"shadow.intro"           = "単語を聞いて、続けて発音しよう。Lexi が一緒に練習するよ。";
+"shadow.start"           = "開始";
+"shadow.replay"          = "もう一度聞く";
+"shadow.tapToSpeak"      = "タップして発音";
+"shadow.listening"       = "聞いています…";
+"shadow.heardFmt"        = "Lexi が聞き取った：%@";
+"shadow.great"           = "バッチリ！🎉";
+"shadow.close"           = "おしい、いい感じ！";
+"shadow.tryAgain"        = "むずかしいね、もう一度 💪";
+"shadow.finish"          = "終わる";
+"shadow.summaryFmt"      = "%d 個の単語を練習したよ！";
+"shadow.summaryGreatFmt" = "うち %d 個はバッチリ 🌟";
+"shadow.again"           = "もう一度練習";
+"shadow.unavailable"     = "シャドーイングには端末内の音声認識が必要ですが、この端末では使えません。ほかの学習方法はぜんぶ使えます。🦉";
+
+// 辞書アップデート (OTA)
+"settings.dict.autoUpdate" = "辞書を自動更新";
+"settings.dict.note"       = "オンにすると GitHub の新しい単語を確認します。既定はオフ —— アプリは完全オフラインで動きます。";
+"settings.dict.checking"   = "確認中…";
+"settings.dict.upToDate"   = "辞書は最新です";
+"settings.dict.updated"    = "辞書を更新しました —— 次回起動時に反映";
+"settings.dict.thanks" = "🌱 学習者のフィードバックに感謝します——あなたの報告が辞書を育てます。";
+"settings.dict.failed"     = "更新を確認できませんでした";
+
+
+// AIデータ送信に関するお知らせ (Apple ガイドライン 5.1.1(i) / 5.1.2(i))
+"aidisclosure.nav.title" = "AIデータ送信に関するお知らせ";
+"aidisclosure.header.title" = "AI機能をご利用になる前にお読みください";
+"aidisclosure.header.body" = "Appleのプライバシー審査ガイドラインに従い、AI機能のご利用前に、どのデータがどこに、何のために送信されるかを明示する必要があります。";
+"aidisclosure.sec.send.title" = "送信するデータ";
+"aidisclosure.sec.send.body" = "AgenticLex内でAIアシスタントに入力・送信された**テキストメッセージのみ**です。複数ターンの会話では、AIが文脈を維持できるよう必要な会話履歴も送信されます。";
+"aidisclosure.sec.recipients.title" = "送信先";
+"aidisclosure.sec.recipients.body" = "「設定 → AI Boost」で有効化したプロバイダに応じて、以下最大4社のサードパーティAIサービスがあなたの入力を受信する可能性があります:\n\n• **Anthropic, PBC**(米国カリフォルニア州サンフランシスコ)— Claude APIによるAI会話\n• **OpenAI, L.L.C.**(米国カリフォルニア州サンフランシスコ)— GPTによる会話、TTSによる音声再生\n• **Google LLC**(米国カリフォルニア州マウンテンビュー)— Gemini APIによるAI会話\n• **ElevenLabs Inc.**(米国ニューヨーク)— TTSによる音声再生\n\nあなたが自身のAPIキーで設定・有効化したプロバイダのみがデータを受信します。有効化されていないプロバイダにデータは送信されません。";
+"aidisclosure.sec.purpose.title" = "用途";
+"aidisclosure.sec.purpose.body" = "**今回のリクエストに対するAI応答の生成のためだけに使用されます。** 各プロバイダはデフォルトでAPIデータをモデル学習に使用しません。データは不正検知のため最大約30日間保持され、その後自動削除されます。";
+"aidisclosure.sec.notSent.title" = "送信しないデータ";
+"aidisclosure.sec.notSent.body" = "Apple ID、デバイスID、氏名、連絡先、位置情報、アドレス帳、写真、IDFAは一切送信されません。すべての通信はTLSで暗号化されます。";
+"aidisclosure.sec.choice.title" = "あなたの選択";
+"aidisclosure.sec.choice.body" = "「**同意しない**」を選ぶとAI機能は無効化されますが、本アプリの他の機能はそのままご利用いただけます。\n\n同意はいつでも「**設定 → プライバシー → AIデータ送信の同意**」から撤回できます。";
+"aidisclosure.button.privacy" = "プライバシーポリシー全文を見る";
+"aidisclosure.button.agree" = "同意して続ける";
+"aidisclosure.button.decline" = "同意しない、AI機能を無効化";
+"aidisclosure.settings.section" = "プライバシー";
+"aidisclosure.settings.row.title" = "AIデータ送信の同意";
+"aidisclosure.settings.status.accepted" = "同意済み";
+"aidisclosure.settings.status.notAccepted" = "未同意";
+"aidisclosure.settings.revoke" = "撤回";
+"aidisclosure.settings.confirm.title" = "同意を撤回しますか?";
+"aidisclosure.settings.confirm.message" = "AI機能は即座に無効化されます。後で再び同意することができます。";
+"aidisclosure.settings.confirm.cancel" = "キャンセル";
+"aidisclosure.settings.confirm.revoke" = "撤回";
+"aidisclosure.error.notConsented" = "AI機能を使うには同意が必要です。「設定 → プライバシー」で再度有効化してください。";

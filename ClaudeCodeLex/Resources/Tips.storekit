@@ -1,0 +1,77 @@
+{
+  "identifier" : "AGENTICLEX_TIPS",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "tip_small",
+      "localizations" : [
+        {
+          "description" : "A small tip — like buying a coffee for the developer.",
+          "displayName" : "Small Tip",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "請喝杯咖啡，支持持續維護 AgenticLex。",
+          "displayName" : "小小贊助",
+          "locale" : "zh_TW"
+        }
+      ],
+      "productID" : "com.gotman.agenticlex.tip.small",
+      "referenceName" : "Tip Small",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "tip_medium",
+      "localizations" : [
+        {
+          "description" : "A medium tip — covers a developer's lunch.",
+          "displayName" : "Medium Tip",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "請吃個午餐，謝謝開發者。",
+          "displayName" : "中等贊助",
+          "locale" : "zh_TW"
+        }
+      ],
+      "productID" : "com.gotman.agenticlex.tip.medium",
+      "referenceName" : "Tip Medium",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "19.99",
+      "familyShareable" : false,
+      "internalID" : "tip_large",
+      "localizations" : [
+        {
+          "description" : "A generous tip — fuels weeks of new vocabulary.",
+          "displayName" : "Generous Tip",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "大力支持，讓 AgenticLex 持續成長。",
+          "displayName" : "大力贊助",
+          "locale" : "zh_TW"
+        }
+      ],
+      "productID" : "com.gotman.agenticlex.tip.large",
+      "referenceName" : "Tip Large",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : []
+  },
+  "subscriptionGroups" : [],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

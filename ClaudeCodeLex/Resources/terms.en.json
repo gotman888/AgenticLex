@@ -1,0 +1,4034 @@
+{
+  "$schema": "2.0.0",
+  "metadata": {
+    "version": "2.14.0",
+    "updated": "2026-06-05",
+    "source": "Claude Code documentation + community usage",
+    "supportedLocales": [
+      "en",
+      "zh-TW",
+      "zh-CN",
+      "ja",
+      "ko",
+      "es",
+      "pt"
+    ],
+    "fullyTranslatedLocales": [
+      "en",
+      "zh-TW",
+      "zh-CN",
+      "ja",
+      "ko",
+      "es",
+      "pt"
+    ]
+  },
+  "categories": [
+    {
+      "id": "cli",
+      "icon": "terminal",
+      "order": 1,
+      "names": {
+        "en": "CLI Basics",
+        "zh-TW": "指令列基礎",
+        "zh-CN": "命令行基础",
+        "ja": "CLI 基礎",
+        "ko": "CLI 기초",
+        "es": "CLI",
+        "pt": "CLI"
+      }
+    },
+    {
+      "id": "hooks",
+      "icon": "link",
+      "order": 2,
+      "names": {
+        "en": "Hooks",
+        "zh-TW": "Hook 鉤子",
+        "zh-CN": "Hook 钩子",
+        "ja": "フック",
+        "ko": "후크",
+        "es": "Hooks",
+        "pt": "Hooks"
+      }
+    },
+    {
+      "id": "mcp",
+      "icon": "network",
+      "order": 3,
+      "names": {
+        "en": "MCP",
+        "zh-TW": "MCP 協定",
+        "zh-CN": "MCP 协议",
+        "ja": "MCP",
+        "ko": "MCP",
+        "es": "MCP",
+        "pt": "MCP"
+      }
+    },
+    {
+      "id": "sub-agent",
+      "icon": "person.2",
+      "order": 4,
+      "names": {
+        "en": "Sub-agents",
+        "zh-TW": "子代理人",
+        "zh-CN": "子代理",
+        "ja": "サブエージェント",
+        "ko": "서브 에이전트",
+        "es": "Sub-agentes",
+        "pt": "Sub-agentes"
+      }
+    },
+    {
+      "id": "plugins",
+      "icon": "puzzlepiece",
+      "order": 5,
+      "names": {
+        "en": "Plugins",
+        "zh-TW": "插件",
+        "zh-CN": "插件",
+        "ja": "プラグイン",
+        "ko": "플러그인",
+        "es": "Plugins",
+        "pt": "Plugins"
+      }
+    },
+    {
+      "id": "skills",
+      "icon": "sparkles",
+      "order": 6,
+      "names": {
+        "en": "Skills",
+        "zh-TW": "技能",
+        "zh-CN": "技能",
+        "ja": "スキル",
+        "ko": "스킬",
+        "es": "Skills",
+        "pt": "Skills"
+      }
+    },
+    {
+      "id": "artifacts",
+      "icon": "doc.richtext",
+      "order": 7,
+      "names": {
+        "en": "Artifacts",
+        "zh-TW": "產出物",
+        "zh-CN": "产出物",
+        "ja": "アーティファクト",
+        "ko": "아티팩트",
+        "es": "Artifacts",
+        "pt": "Artifacts"
+      }
+    },
+    {
+      "id": "tools",
+      "icon": "wrench.and.screwdriver",
+      "order": 8,
+      "names": {
+        "en": "Tools",
+        "zh-TW": "工具",
+        "zh-CN": "工具",
+        "ja": "ツール",
+        "ko": "도구",
+        "es": "Herramientas",
+        "pt": "Ferramentas"
+      }
+    },
+    {
+      "id": "context",
+      "icon": "brain",
+      "order": 9,
+      "names": {
+        "en": "Context",
+        "zh-TW": "上下文",
+        "zh-CN": "上下文",
+        "ja": "コンテキスト",
+        "ko": "컨텍스트",
+        "es": "Contexto",
+        "pt": "Contexto"
+      }
+    },
+    {
+      "id": "prompting",
+      "icon": "text.bubble",
+      "order": 10,
+      "names": {
+        "en": "Prompting",
+        "zh-TW": "提示工程",
+        "zh-CN": "提示工程",
+        "ja": "プロンプト",
+        "ko": "프롬프트",
+        "es": "Prompting",
+        "pt": "Prompting"
+      }
+    },
+    {
+      "id": "misc",
+      "icon": "ellipsis.circle",
+      "order": 11,
+      "names": {
+        "en": "Misc",
+        "zh-TW": "其他",
+        "zh-CN": "其他",
+        "ja": "その他",
+        "ko": "기타",
+        "es": "Otros",
+        "pt": "Outros"
+      }
+    },
+    {
+      "id": "commands",
+      "icon": "command",
+      "order": 12,
+      "names": {
+        "en": "Commands",
+        "zh-TW": "斜線指令",
+        "zh-CN": "斜杠命令",
+        "ja": "コマンド",
+        "ko": "명령어",
+        "es": "Comandos",
+        "pt": "Comandos"
+      }
+    },
+    {
+      "id": "settings",
+      "icon": "gearshape",
+      "order": 13,
+      "names": {
+        "en": "Settings",
+        "zh-TW": "設定權限",
+        "zh-CN": "设置权限",
+        "ja": "設定",
+        "ko": "설정",
+        "es": "Ajustes",
+        "pt": "Ajustes"
+      }
+    }
+  ],
+  "terms": [
+    {
+      "id": "slash-command",
+      "english": "Slash Command",
+      "category": "cli",
+      "pronunciation": "/slæʃ kəˈmænd/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "cli",
+        "shortcut",
+        "/"
+      ],
+      "relatedTerms": [
+        "hook",
+        "skill"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "hook",
+      "english": "Hook",
+      "category": "hooks",
+      "pronunciation": "/hʊk/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "hooks",
+        "lifecycle"
+      ],
+      "relatedTerms": [
+        "pre-tool-use",
+        "post-tool-use",
+        "subagent-stop"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "pre-tool-use",
+      "english": "PreToolUse",
+      "category": "hooks",
+      "pronunciation": "/priː tuːl juːs/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "before"
+      ],
+      "relatedTerms": [
+        "hook",
+        "post-tool-use"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "post-tool-use",
+      "english": "PostToolUse",
+      "category": "hooks",
+      "pronunciation": "/poʊst tuːl juːs/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "after"
+      ],
+      "relatedTerms": [
+        "hook",
+        "pre-tool-use"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "subagent-stop",
+      "english": "SubagentStop",
+      "category": "hooks",
+      "pronunciation": "/sʌbˈeɪdʒənt stɒp/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "subagent"
+      ],
+      "relatedTerms": [
+        "sub-agent",
+        "hook"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "mcp",
+      "english": "MCP",
+      "category": "mcp",
+      "pronunciation": "/ɛm siː piː/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "mcp",
+        "protocol"
+      ],
+      "relatedTerms": [
+        "mcp-server",
+        "tool"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "mcp-server",
+      "english": "MCP Server",
+      "category": "mcp",
+      "pronunciation": "/ɛm siː piː ˈsɜːrvər/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "mcp",
+        "server"
+      ],
+      "relatedTerms": [
+        "mcp",
+        "tool"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "sub-agent",
+      "english": "Sub-agent",
+      "category": "sub-agent",
+      "pronunciation": "/ˈsʌb ˈeɪdʒənt/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "agent",
+        "delegation"
+      ],
+      "relatedTerms": [
+        "subagent-stop"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "plugin",
+      "english": "Plugin",
+      "category": "plugins",
+      "pronunciation": "/ˈplʌɡɪn/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "plugin",
+        "bundle"
+      ],
+      "relatedTerms": [
+        "marketplace",
+        "skill"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "marketplace",
+      "english": "Marketplace",
+      "category": "plugins",
+      "pronunciation": "/ˈmɑːrkɪtpleɪs/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "marketplace",
+        "registry"
+      ],
+      "relatedTerms": [
+        "plugin"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "skill",
+      "english": "Skill",
+      "category": "skills",
+      "pronunciation": "/skɪl/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "skill"
+      ],
+      "relatedTerms": [
+        "plugin",
+        "skill-md"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "skill-md",
+      "english": "SKILL.md",
+      "category": "skills",
+      "pronunciation": "/skɪl daht ɛm diː/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "skill",
+        "manifest"
+      ],
+      "relatedTerms": [
+        "skill"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "artifact",
+      "english": "Artifact",
+      "category": "artifacts",
+      "pronunciation": "/ˈɑːrtɪfækt/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "artifact"
+      ],
+      "relatedTerms": [
+        "live-artifact"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "live-artifact",
+      "english": "Live Artifact",
+      "category": "artifacts",
+      "pronunciation": "/laɪv ˈɑːrtɪfækt/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "artifact",
+        "dynamic"
+      ],
+      "relatedTerms": [
+        "artifact"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "tool",
+      "english": "Tool",
+      "category": "tools",
+      "pronunciation": "/tuːl/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "tool"
+      ],
+      "relatedTerms": [
+        "tool-use",
+        "tool-result"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "tool-use",
+      "english": "Tool Use",
+      "category": "tools",
+      "pronunciation": "/tuːl juːs/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "tool",
+        "function-call"
+      ],
+      "relatedTerms": [
+        "tool",
+        "tool-result"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "tool-result",
+      "english": "Tool Result",
+      "category": "tools",
+      "pronunciation": "/tuːl rɪˈzʌlt/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "tool",
+        "output"
+      ],
+      "relatedTerms": [
+        "tool-use"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "context-window",
+      "english": "Context Window",
+      "category": "context",
+      "pronunciation": "/ˈkɒntɛkst ˈwɪndoʊ/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "context",
+        "memory"
+      ],
+      "relatedTerms": [
+        "token",
+        "compaction"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "token",
+      "english": "Token",
+      "category": "context",
+      "pronunciation": "/ˈtoʊkən/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "context",
+        "unit"
+      ],
+      "relatedTerms": [
+        "context-window"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "compaction",
+      "english": "Compaction",
+      "category": "context",
+      "pronunciation": "/kəmˈpækʃən/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "context",
+        "compress"
+      ],
+      "relatedTerms": [
+        "context-window"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "claude-md",
+      "english": "CLAUDE.md",
+      "category": "context",
+      "pronunciation": "/klɔːd daht ɛm diː/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "context",
+        "memory",
+        "config"
+      ],
+      "relatedTerms": [
+        "context-window"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "system-prompt",
+      "english": "System Prompt",
+      "category": "prompting",
+      "pronunciation": "/ˈsɪstəm prɒmpt/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "prompt"
+      ],
+      "relatedTerms": [
+        "claude-md"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "few-shot",
+      "english": "Few-shot",
+      "category": "prompting",
+      "pronunciation": "/fjuː ʃɒt/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "prompt",
+        "examples"
+      ],
+      "relatedTerms": [
+        "system-prompt"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "agent-sdk",
+      "english": "Claude Agent SDK",
+      "category": "misc",
+      "pronunciation": "/klɔːd ˈeɪdʒənt ɛs diː keɪ/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "sdk"
+      ],
+      "relatedTerms": [
+        "sub-agent"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "worktree",
+      "english": "Worktree",
+      "category": "misc",
+      "pronunciation": "/ˈwɜːrktriː/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "git",
+        "isolation"
+      ],
+      "relatedTerms": [
+        "sub-agent"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "permission",
+      "english": "Permission",
+      "category": "misc",
+      "pronunciation": "/pərˈmɪʃən/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "security"
+      ],
+      "relatedTerms": [
+        "hook"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "status-line",
+      "english": "Status Line",
+      "category": "cli",
+      "pronunciation": "/ˈsteɪtəs laɪn/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "cli",
+        "ui"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "session",
+      "english": "Session",
+      "category": "cli",
+      "pronunciation": "/ˈsɛʃən/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "cli"
+      ],
+      "relatedTerms": [
+        "compaction"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "background-task",
+      "english": "Background Task",
+      "category": "misc",
+      "pronunciation": "/ˈbækɡraʊnd tæsk/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "async"
+      ],
+      "relatedTerms": [
+        "sub-agent"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "trigger",
+      "english": "Trigger",
+      "category": "skills",
+      "pronunciation": "/ˈtrɪɡər/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "skill",
+        "match"
+      ],
+      "relatedTerms": [
+        "skill",
+        "skill-md"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "clear-command",
+      "english": "/clear",
+      "category": "commands",
+      "pronunciation": "/slæʃ klɪər/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "slash-command",
+        "reset"
+      ],
+      "relatedTerms": [
+        "slash-command",
+        "compaction",
+        "session"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "init-command",
+      "english": "/init",
+      "category": "commands",
+      "pronunciation": "/slæʃ ɪˈnɪt/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "slash-command",
+        "setup"
+      ],
+      "relatedTerms": [
+        "slash-command",
+        "claude-md"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "plan-mode",
+      "english": "Plan Mode",
+      "category": "cli",
+      "pronunciation": "/plæn moʊd/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "cli",
+        "planning",
+        "read-only"
+      ],
+      "relatedTerms": [
+        "slash-command",
+        "permission"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "headless-mode",
+      "english": "Headless Mode",
+      "category": "cli",
+      "pronunciation": "/ˈhɛdlɪs moʊd/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "automation",
+        "ci"
+      ],
+      "relatedTerms": [
+        "session",
+        "background-task"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "notification-hook",
+      "english": "Notification",
+      "category": "hooks",
+      "pronunciation": "/ˌnoʊtɪfɪˈkeɪʃən/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "notification"
+      ],
+      "relatedTerms": [
+        "hook",
+        "stop-hook"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "stop-hook",
+      "english": "Stop",
+      "category": "hooks",
+      "pronunciation": "/stɒp/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "lifecycle",
+        "end"
+      ],
+      "relatedTerms": [
+        "hook",
+        "subagent-stop"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "user-prompt-submit",
+      "english": "UserPromptSubmit",
+      "category": "hooks",
+      "pronunciation": "/ˈjuːzər prɒmpt səbˈmɪt/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "hook",
+        "prompt",
+        "before"
+      ],
+      "relatedTerms": [
+        "hook",
+        "pre-tool-use"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "mcp-resource",
+      "english": "Resource",
+      "category": "mcp",
+      "pronunciation": "/ˈriːsɔːrs/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "mcp",
+        "resource",
+        "data"
+      ],
+      "relatedTerms": [
+        "mcp",
+        "mcp-server",
+        "mcp-prompt"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "mcp-prompt",
+      "english": "MCP Prompt",
+      "category": "mcp",
+      "pronunciation": "/ɛm siː piː prɒmpt/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "mcp",
+        "prompt",
+        "template"
+      ],
+      "relatedTerms": [
+        "mcp",
+        "mcp-server",
+        "mcp-resource"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "mcp-transport",
+      "english": "Transport",
+      "category": "mcp",
+      "pronunciation": "/ˈtrænspɔːrt/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "mcp",
+        "transport",
+        "stdio"
+      ],
+      "relatedTerms": [
+        "mcp",
+        "mcp-server"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "task-tool",
+      "english": "Agent Tool",
+      "category": "sub-agent",
+      "pronunciation": "/ˈeɪdʒənt tuːl/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "sub-agent",
+        "tool",
+        "delegation"
+      ],
+      "relatedTerms": [
+        "sub-agent",
+        "tool",
+        "delegation"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "delegation",
+      "english": "Delegation",
+      "category": "sub-agent",
+      "pronunciation": "/ˌdɛlɪˈɡeɪʃən/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent",
+        "workflow"
+      ],
+      "relatedTerms": [
+        "sub-agent",
+        "task-tool",
+        "parallel-agents"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "parallel-agents",
+      "english": "Parallel Agents",
+      "category": "sub-agent",
+      "pronunciation": "/ˈpærəlɛl ˈeɪdʒənts/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent",
+        "concurrency"
+      ],
+      "relatedTerms": [
+        "sub-agent",
+        "task-tool",
+        "background-task"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "marketplace-json",
+      "english": "marketplace.json",
+      "category": "plugins",
+      "pronunciation": "/ˈmɑːrkɪtpleɪs ˈdʒeɪsɒn/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "plugin",
+        "marketplace",
+        "manifest"
+      ],
+      "relatedTerms": [
+        "marketplace",
+        "plugin",
+        "plugin-manifest"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "plugin-manifest",
+      "english": "plugin.json",
+      "category": "plugins",
+      "pronunciation": "/ˈplʌɡɪn ˈdʒeɪsɒn/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "plugin",
+        "manifest",
+        "config"
+      ],
+      "relatedTerms": [
+        "plugin",
+        "marketplace-json"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "progressive-disclosure",
+      "english": "Progressive Disclosure",
+      "category": "skills",
+      "pronunciation": "/prəˈɡrɛsɪv dɪsˈkloʊʒər/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "skill",
+        "loading",
+        "context"
+      ],
+      "relatedTerms": [
+        "skill",
+        "skill-md",
+        "context-window"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "frontmatter",
+      "english": "Frontmatter",
+      "category": "skills",
+      "pronunciation": "/ˈfrʌntmætər/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "skill",
+        "yaml",
+        "metadata"
+      ],
+      "relatedTerms": [
+        "skill-md",
+        "trigger"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "react-artifact",
+      "english": "React Artifact",
+      "category": "artifacts",
+      "pronunciation": "/riˈækt ˈɑːrtɪfækt/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "artifact",
+        "react",
+        "ui"
+      ],
+      "relatedTerms": [
+        "artifact",
+        "live-artifact"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "artifact-publishing",
+      "english": "Publishing",
+      "category": "artifacts",
+      "pronunciation": "/ˈpʌblɪʃɪŋ/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "artifact",
+        "share",
+        "publish"
+      ],
+      "relatedTerms": [
+        "artifact",
+        "react-artifact"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "bash-tool",
+      "english": "Bash",
+      "category": "tools",
+      "pronunciation": "/bæʃ/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tool",
+        "shell",
+        "command"
+      ],
+      "relatedTerms": [
+        "tool",
+        "tool-use",
+        "permission"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "read-tool",
+      "english": "Read",
+      "category": "tools",
+      "pronunciation": "/riːd/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tool",
+        "file",
+        "read"
+      ],
+      "relatedTerms": [
+        "tool",
+        "edit-tool",
+        "grep-tool"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "edit-tool",
+      "english": "Edit",
+      "category": "tools",
+      "pronunciation": "/ˈɛdɪt/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tool",
+        "file",
+        "modify"
+      ],
+      "relatedTerms": [
+        "tool",
+        "read-tool"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "grep-tool",
+      "english": "Grep",
+      "category": "tools",
+      "pronunciation": "/ɡrɛp/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "tool",
+        "search",
+        "regex"
+      ],
+      "relatedTerms": [
+        "tool",
+        "read-tool",
+        "web-search"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "web-search",
+      "english": "WebSearch",
+      "category": "tools",
+      "pronunciation": "/wɛb sɜːrtʃ/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tool",
+        "search",
+        "web"
+      ],
+      "relatedTerms": [
+        "tool",
+        "tool-use",
+        "grep-tool"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "prompt-caching",
+      "english": "Prompt Caching",
+      "category": "context",
+      "pronunciation": "/prɒmpt ˈkæʃɪŋ/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "context",
+        "cache",
+        "cost"
+      ],
+      "relatedTerms": [
+        "context-window",
+        "token",
+        "system-prompt"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "memory-tool",
+      "english": "Memory Tool",
+      "category": "context",
+      "pronunciation": "/ˈmɛməri tuːl/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "context",
+        "memory",
+        "persistence"
+      ],
+      "relatedTerms": [
+        "claude-md",
+        "context-window",
+        "compaction"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "chain-of-thought",
+      "english": "Chain-of-Thought",
+      "category": "prompting",
+      "pronunciation": "/tʃeɪn əv θɔːt/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "prompt",
+        "reasoning"
+      ],
+      "relatedTerms": [
+        "few-shot",
+        "extended-thinking",
+        "zero-shot"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "zero-shot",
+      "english": "Zero-shot",
+      "category": "prompting",
+      "pronunciation": "/ˈzɪəroʊ ʃɒt/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "prompt",
+        "examples"
+      ],
+      "relatedTerms": [
+        "few-shot",
+        "chain-of-thought"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "extended-thinking",
+      "english": "Extended Thinking",
+      "category": "prompting",
+      "pronunciation": "/ɪkˈstɛndɪd ˈθɪŋkɪŋ/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "prompt",
+        "reasoning",
+        "thinking"
+      ],
+      "relatedTerms": [
+        "chain-of-thought",
+        "token"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "prompt-engineering",
+      "english": "Prompt Engineering",
+      "category": "prompting",
+      "pronunciation": "/prɒmpt ˌɛndʒɪˈnɪərɪŋ/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "prompt",
+        "technique"
+      ],
+      "relatedTerms": [
+        "system-prompt",
+        "few-shot",
+        "chain-of-thought"
+      ],
+      "addedDate": "2026-05-20"
+    },
+    {
+      "id": "compact-command",
+      "english": "/compact",
+      "category": "commands",
+      "pronunciation": "/slæʃ kəmˈpækt/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "compaction",
+        "context-window"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "context-command",
+      "english": "/context",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈkɒntɛkst/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "context-window",
+        "token",
+        "compaction"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "model-command",
+      "english": "/model",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈmɒdl/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "agents-command",
+      "english": "/agents",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈeɪdʒənts/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "sub-agent",
+        "delegation"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "mcp-command",
+      "english": "/mcp",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˌɛmsiːˈpiː/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "mcp",
+        "mcp-server"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "permissions-command",
+      "english": "/permissions",
+      "category": "commands",
+      "pronunciation": "/slæʃ pərˈmɪʃənz/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "resume-command",
+      "english": "/resume",
+      "category": "commands",
+      "pronunciation": "/slæʃ rɪˈzuːm/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "session"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "usage-command",
+      "english": "/usage",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈjuːsɪdʒ/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "token"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "rewind-command",
+      "english": "/rewind",
+      "category": "commands",
+      "pronunciation": "/slæʃ rɪˈwaɪnd/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "session"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "help-command",
+      "english": "/help",
+      "category": "commands",
+      "pronunciation": "/slæʃ hɛlp/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "config-command",
+      "english": "/config",
+      "category": "commands",
+      "pronunciation": "/slæʃ kənˈfɪɡ/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "memory-command",
+      "english": "/memory",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈmɛm.ə.ri/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "claude-md",
+        "memory-tool"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "review-command",
+      "english": "/review",
+      "category": "commands",
+      "pronunciation": "/slæʃ rɪˈvjuː/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "hooks-command",
+      "english": "/hooks",
+      "category": "commands",
+      "pronunciation": "/slæʃ hʊks",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "hook"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "doctor-command",
+      "english": "/doctor",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈdɒktər/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "skills-command",
+      "english": "/skills",
+      "category": "commands",
+      "pronunciation": "/slæʃ skɪlz",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "skill"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "plugin-command",
+      "english": "/plugin",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈplʌɡɪn/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "plugin",
+        "marketplace"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "export-command",
+      "english": "/export",
+      "category": "commands",
+      "pronunciation": "/slæʃ ɪkˈspɔːrt/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "session"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "add-dir-command",
+      "english": "/add-dir",
+      "category": "commands",
+      "pronunciation": "/slæʃ æd dɜːr/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "diff-command",
+      "english": "/diff",
+      "category": "commands",
+      "pronunciation": "/slæʃ dɪf/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "statusline-command",
+      "english": "/statusline",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈsteɪtəs laɪn/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "status-line"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "security-review-command",
+      "english": "/security-review",
+      "category": "commands",
+      "pronunciation": "/slæʃ sɪˈkjʊərəti rɪˈvjuː/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "effort-command",
+      "english": "/effort",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈɛfərt/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "extended-thinking"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "code-review-command",
+      "english": "/code-review",
+      "category": "commands",
+      "pronunciation": "/slæʃ koʊd rɪˈvjuː/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "skill"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "background-command",
+      "english": "/background",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈbækˌɡraʊnd/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "background-task"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "tasks-command",
+      "english": "/tasks",
+      "category": "commands",
+      "pronunciation": "/slæʃ tæsks/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "background-task"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "branch-command",
+      "english": "/branch",
+      "category": "commands",
+      "pronunciation": "/slæʃ bræntʃ/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "session"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "teleport-command",
+      "english": "/teleport",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈtɛləˌpɔrt/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "session"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "goal-command",
+      "english": "/goal",
+      "category": "commands",
+      "pronunciation": "/slæʃ ɡoʊl/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "verify-command",
+      "english": "/verify",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈvɛrɪˌfaɪ/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "skill"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "run-command",
+      "english": "/run",
+      "category": "commands",
+      "pronunciation": "/slæʃ rʌn",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "skill"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "btw-command",
+      "english": "/btw",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˌbiː tiː ˈdʌbəljuː",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "context-window"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "login-command",
+      "english": "/login",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈlɒɡ.ɪn",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "feedback-command",
+      "english": "/feedback",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈfiːd.bæk",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "release-notes-command",
+      "english": "/release-notes",
+      "category": "commands",
+      "pronunciation": "/slæʃ rɪˈliːs noʊts",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "terminal-setup-command",
+      "english": "/terminal-setup",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈtɜːr.mɪ.nəl ˈset.ʌp",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "install-github-app-command",
+      "english": "/install-github-app",
+      "category": "commands",
+      "pronunciation": "/slæʃ ɪnˈstɔːl ˈɡɪthʌb æp/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "slash-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "insights-command",
+      "english": "/insights",
+      "category": "commands",
+      "pronunciation": "/slæʃ ˈɪnsaɪts/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "slash-command",
+        "commands"
+      ],
+      "relatedTerms": [
+        "session"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "settings-json",
+      "english": "settings.json",
+      "category": "settings",
+      "pronunciation": "/ˈsɛtɪŋz dɒt dʒeɪˈsɒn/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "claude-md",
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "permission-mode",
+      "english": "Permission Mode",
+      "category": "settings",
+      "pronunciation": "/pərˈmɪʃən moʊd/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "permission",
+        "plan-mode"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "accept-edits",
+      "english": "Accept Edits",
+      "category": "settings",
+      "pronunciation": "/əkˈsɛpt ˈɛdɪts/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "allow-rule",
+      "english": "Allow Rule",
+      "category": "settings",
+      "pronunciation": "/əˈlaʊ ruːl/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "deny-rule",
+      "english": "Deny Rule",
+      "category": "settings",
+      "pronunciation": "/dɪˈnaɪ ruːl/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "ask-rule",
+      "english": "Ask Rule",
+      "category": "settings",
+      "pronunciation": "/ɑːsk ruːl/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "claude-dir",
+      "english": ".claude/ Directory",
+      "category": "settings",
+      "pronunciation": "/dɒt klɔːd ˌdaɪˈrɛktəri/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "claude-md",
+        "settings-json"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "settings-local-json",
+      "english": "settings.local.json",
+      "category": "settings",
+      "pronunciation": "/ˈsɛtɪŋz ˈləʊkəl dɒt dʒeɪˈsɒn/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "settings-json"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "auto-mode",
+      "english": "Auto Mode",
+      "category": "settings",
+      "pronunciation": "/ˈɔːtəʊ məʊd/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "bypass-permissions",
+      "english": "Bypass Permissions",
+      "category": "settings",
+      "pronunciation": "/ˈbaɪpɑːs ˌpɜːmɪˈʃənz/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "sandboxing",
+      "english": "Sandboxing",
+      "category": "settings",
+      "pronunciation": "/ˈsændbɒksɪŋ/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "bash-tool",
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "skip-permissions-flag",
+      "english": "--dangerously-skip-permissions",
+      "category": "settings",
+      "pronunciation": "/ˈdeɪndʒərəsli skɪp pɜːrˈmɪʃənz/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "permission",
+        "bypass-permissions"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "allowed-tools-setting",
+      "english": "allowedTools",
+      "category": "settings",
+      "pronunciation": "/əˈlaʊd tuːlz/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "tool",
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "disallowed-tools-setting",
+      "english": "disallowedTools",
+      "category": "settings",
+      "pronunciation": "/ˌdɪsəˈlaʊd tuːlz/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "tool",
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "output-style",
+      "english": "Output Style",
+      "category": "settings",
+      "pronunciation": "/ˈaʊtpʊt staɪl/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "system-prompt"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "env-setting",
+      "english": "env",
+      "category": "settings",
+      "pronunciation": "/ɛnv/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "settings-json"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "settings-precedence",
+      "english": "Settings Precedence",
+      "category": "settings",
+      "pronunciation": "/ˈsɛtɪŋz ˈprɛsɪdəns/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "settings-json"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "managed-settings",
+      "english": "Managed Settings",
+      "category": "settings",
+      "pronunciation": "/ˈmænɪdʒd ˈsɛtɪŋz/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "settings-json"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "additional-directories",
+      "english": "additionalDirectories",
+      "category": "settings",
+      "pronunciation": "/əˈdɪʃənl daɪˈrɛktəriz/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "add-dir-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "dont-ask-mode",
+      "english": "dontAsk Mode",
+      "category": "settings",
+      "pronunciation": "/dəʊnt ɑːsk məʊd/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "settings"
+      ],
+      "relatedTerms": [
+        "permission"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "write-tool",
+      "english": "Write",
+      "category": "tools",
+      "pronunciation": "/raɪt tuːl/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "edit-tool",
+        "read-tool"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "glob-tool",
+      "english": "Glob",
+      "category": "tools",
+      "pronunciation": "/ɡlɒb tuːl/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "grep-tool",
+        "read-tool"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "webfetch-tool",
+      "english": "WebFetch",
+      "category": "tools",
+      "pronunciation": "/ˈwɛbfɛtʃ tuːl/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "web-search"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "todowrite-tool",
+      "english": "TodoWrite",
+      "category": "tools",
+      "pronunciation": "/ˈtuːduː raɪt tuːl/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "tool"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "task-create-tool",
+      "english": "TaskCreate / TaskUpdate",
+      "category": "tools",
+      "pronunciation": "/tæsk kriˈeɪt, tæsk ˈʌpdeɪt tuːl/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "tool"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "ask-user-question-tool",
+      "english": "AskUserQuestion",
+      "category": "tools",
+      "pronunciation": "/ɑːsk ˈjuːzər ˈkwɛstʃən tuːl/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "tool"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "exit-plan-mode-tool",
+      "english": "ExitPlanMode",
+      "category": "tools",
+      "pronunciation": "/ˈɛɡzɪt plæn moʊd tuːl/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "plan-mode"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "tool-search",
+      "english": "ToolSearch",
+      "category": "tools",
+      "pronunciation": "/tuːl sɜːrtʃ/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "tool",
+        "context-window"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "deferred-tool",
+      "english": "Deferred Tool",
+      "category": "tools",
+      "pronunciation": "/dɪˈfɜːrd tuːl/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "tool",
+        "context-window"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "enter-plan-mode-tool",
+      "english": "EnterPlanMode",
+      "category": "tools",
+      "pronunciation": "/ˈɛntər plæn moʊd tuːl/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "plan-mode"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "notebook-edit-tool",
+      "english": "NotebookEdit",
+      "category": "tools",
+      "pronunciation": "/ˈnoʊtbʊk ˈɛdɪt tuːl/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "edit-tool"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "monitor-tool",
+      "english": "Monitor",
+      "category": "tools",
+      "pronunciation": "/ˈmɒnɪtər tuːl/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "bash-tool"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "lsp-tool",
+      "english": "LSP",
+      "category": "tools",
+      "pronunciation": "/ˌɛl ɛs ˈpiː tuːl/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "tool"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "cron-create-tool",
+      "english": "CronCreate",
+      "category": "tools",
+      "pronunciation": "/krɒn kriˈeɪt tuːl/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "tools"
+      ],
+      "relatedTerms": [
+        "background-task"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "custom-subagent",
+      "english": "Custom Subagent",
+      "category": "sub-agent",
+      "pronunciation": "/ˈkʌstəm ˈsʌbˌeɪdʒənt/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "sub-agent",
+        "delegation"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "explore-agent",
+      "english": "Explore Agent",
+      "category": "sub-agent",
+      "pronunciation": "/ɪkˈsplɔːr ˈeɪdʒənt/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "sub-agent"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "plan-agent",
+      "english": "Plan Agent",
+      "category": "sub-agent",
+      "pronunciation": "/plæn ˈeɪdʒənt/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "sub-agent",
+        "plan-mode"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "general-purpose-agent",
+      "english": "General-purpose Agent",
+      "category": "sub-agent",
+      "pronunciation": "/ˈdʒɛnrəl ˈpɜːrpəs ˈeɪdʒənt/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "sub-agent"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "automatic-delegation",
+      "english": "Automatic Delegation",
+      "category": "sub-agent",
+      "pronunciation": "/ˌɔːtəˈmætɪk ˌdɛlɪˈɡeɪʃən/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "delegation",
+        "sub-agent"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "claude-agents-dir",
+      "english": ".claude/agents/",
+      "category": "sub-agent",
+      "pronunciation": "/dɒt kloːd ˈeɪdʒənts/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "claude-dir",
+        "sub-agent"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "at-mention-subagent",
+      "english": "@-mention (Subagent)",
+      "category": "sub-agent",
+      "pronunciation": "/æt ˈmɛnʃən ˈsʌbˌeɪdʒənt/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "sub-agent"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "background-agent",
+      "english": "Background Agent",
+      "category": "sub-agent",
+      "pronunciation": "/ˈbækˌɡraʊnd ˈeɪdʒənt/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "background-task",
+        "background-command"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "agent-flag",
+      "english": "--agent",
+      "category": "sub-agent",
+      "pronunciation": "/ˈeɪdʒənt flæɡ/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "sub-agent"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "agent-memory",
+      "english": "Agent Memory",
+      "category": "sub-agent",
+      "pronunciation": "/ˈeɪdʒənt ˈmɛm(ə)ri/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "sub-agent",
+        "memory-tool"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "agent-teams",
+      "english": "Agent Teams",
+      "category": "sub-agent",
+      "pronunciation": "/ˈeɪdʒənt tiːmz/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "sub-agent"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "forked-subagent",
+      "english": "Forked Subagent",
+      "category": "sub-agent",
+      "pronunciation": "/ˈfɔːrkt ˈsʌbˌeɪdʒənt/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "sub-agent"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "workflow-tool",
+      "english": "Workflow",
+      "category": "sub-agent",
+      "pronunciation": "/ˈwɜːrkˌfloʊ/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "sub-agent",
+        "background-task"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "isolation-worktree",
+      "english": "isolation: worktree",
+      "category": "sub-agent",
+      "pronunciation": "/ˌaɪsəˈleɪʃən ˈwɜːrktriː/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "sub-agent",
+        "worktree"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "agent-view",
+      "english": "Agent View",
+      "category": "sub-agent",
+      "pronunciation": "/ˈeɪdʒənt vjuː/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "sub-agent"
+      ],
+      "relatedTerms": [
+        "background-agent"
+      ],
+      "addedDate": "2026-06-03"
+    },
+    {
+      "id": "mcp-json",
+      "english": ".mcp.json",
+      "category": "mcp",
+      "pronunciation": "/dɒt ɛm siː piː dɒt ˈdʒeɪsən/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "mcp",
+        "config",
+        "team"
+      ],
+      "relatedTerms": [
+        "mcp",
+        "mcp-server",
+        "mcp-scope"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "mcp-tool",
+      "english": "MCP Tool",
+      "category": "mcp",
+      "pronunciation": "/ɛm siː piː tuːl/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "mcp",
+        "tool"
+      ],
+      "relatedTerms": [
+        "mcp",
+        "mcp-server",
+        "tool"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "mcp-scope",
+      "english": "MCP Scope",
+      "category": "mcp",
+      "pronunciation": "/ɛm siː piː skoʊp/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "mcp",
+        "config",
+        "scope"
+      ],
+      "relatedTerms": [
+        "mcp-json",
+        "mcp-server",
+        "settings-precedence"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "oauth",
+      "english": "OAuth",
+      "category": "mcp",
+      "pronunciation": "/ˈoʊɔːθ/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "mcp",
+        "auth",
+        "remote"
+      ],
+      "relatedTerms": [
+        "mcp-server",
+        "connector",
+        "streamable-http"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "connector",
+      "english": "Connector",
+      "category": "mcp",
+      "pronunciation": "/kəˈnɛktər/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "mcp",
+        "remote",
+        "directory"
+      ],
+      "relatedTerms": [
+        "mcp-server",
+        "oauth",
+        "mcp"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "stdio",
+      "english": "stdio",
+      "category": "mcp",
+      "pronunciation": "/ˈstændərd aɪ oʊ/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "mcp",
+        "transport",
+        "local"
+      ],
+      "relatedTerms": [
+        "mcp-transport",
+        "streamable-http",
+        "sse"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "streamable-http",
+      "english": "Streamable HTTP",
+      "category": "mcp",
+      "pronunciation": "/ˈstriːməbəl ˌeɪtʃ.tiː.tiːˈpiː/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "mcp",
+        "transport",
+        "remote"
+      ],
+      "relatedTerms": [
+        "mcp-transport",
+        "stdio",
+        "oauth"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "sse",
+      "english": "SSE",
+      "category": "mcp",
+      "pronunciation": "/ˌɛs ɛs ˈiː/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "mcp",
+        "transport",
+        "deprecated"
+      ],
+      "relatedTerms": [
+        "mcp-transport",
+        "streamable-http",
+        "stdio"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "mcp-tool-search",
+      "english": "MCP Tool Search",
+      "category": "mcp",
+      "pronunciation": "/ˌɛm.siːˈpiː tuːl sɜːrtʃ/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "mcp",
+        "context",
+        "tools"
+      ],
+      "relatedTerms": [
+        "mcp-tool",
+        "tool-search",
+        "mcp-server"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "elicitation",
+      "english": "Elicitation",
+      "category": "mcp",
+      "pronunciation": "/ɪˌlɪsɪˈteɪʃən/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "mcp",
+        "input"
+      ],
+      "relatedTerms": [
+        "mcp-server",
+        "mcp-tool"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "managed-mcp-json",
+      "english": "managed-mcp.json",
+      "category": "mcp",
+      "pronunciation": "/ˈmænɪdʒd dɒt ɛm siː piː dɒt dʒeɪsɒn/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "mcp",
+        "config",
+        "enterprise"
+      ],
+      "relatedTerms": [
+        "mcp-json",
+        "managed-settings"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "session-start",
+      "english": "SessionStart",
+      "category": "hooks",
+      "pronunciation": "/ˈsɛʃən stɑːrt/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "lifecycle",
+        "start"
+      ],
+      "relatedTerms": [
+        "hook",
+        "session-end",
+        "user-prompt-submit"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "session-end",
+      "english": "SessionEnd",
+      "category": "hooks",
+      "pronunciation": "/ˈsɛʃ.ən ɛnd/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "lifecycle",
+        "end"
+      ],
+      "relatedTerms": [
+        "hook",
+        "session-start",
+        "stop-hook"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "matcher",
+      "english": "Matcher",
+      "category": "hooks",
+      "pronunciation": "/ˈmætʃər/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "config"
+      ],
+      "relatedTerms": [
+        "hook",
+        "pre-tool-use",
+        "post-tool-use"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "exit-code",
+      "english": "Exit Code",
+      "category": "hooks",
+      "pronunciation": "/ˈɛɡzɪt koʊd/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "exit"
+      ],
+      "relatedTerms": [
+        "hook",
+        "pre-tool-use",
+        "permission-decision"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "pre-compact",
+      "english": "PreCompact",
+      "category": "hooks",
+      "pronunciation": "/priːkəmˈpækt/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "compaction"
+      ],
+      "relatedTerms": [
+        "hook",
+        "post-compact",
+        "compaction"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "post-compact",
+      "english": "PostCompact",
+      "category": "hooks",
+      "pronunciation": "/poʊst kəmˈpækt/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "compaction"
+      ],
+      "relatedTerms": [
+        "hook",
+        "pre-compact",
+        "compaction"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "subagent-start",
+      "english": "SubagentStart",
+      "category": "hooks",
+      "pronunciation": "/sʌbˈeɪdʒənt stɑːrt/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "subagent"
+      ],
+      "relatedTerms": [
+        "hook",
+        "subagent-stop",
+        "background-agent"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "post-tool-use-failure",
+      "english": "PostToolUseFailure",
+      "category": "hooks",
+      "pronunciation": "/poʊst tuːl juːz ˈfeɪljər/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "error"
+      ],
+      "relatedTerms": [
+        "hook",
+        "post-tool-use",
+        "exit-code"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "permission-decision",
+      "english": "permissionDecision",
+      "category": "hooks",
+      "pronunciation": "/ˌpɜːrmɪˈʃən dɪˈsɪʒən/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "hook",
+        "permission"
+      ],
+      "relatedTerms": [
+        "hook",
+        "pre-tool-use",
+        "permission-mode"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "additional-context",
+      "english": "additionalContext",
+      "category": "hooks",
+      "pronunciation": "/əˈdɪʃənl ˈkɒntɛkst/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "hook",
+        "context"
+      ],
+      "relatedTerms": [
+        "hook",
+        "session-start",
+        "hook-specific-output"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "hook-specific-output",
+      "english": "hookSpecificOutput",
+      "category": "hooks",
+      "pronunciation": "/hʊk spəˈsɪfɪk ˈaʊtpʊt/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "hook",
+        "output",
+        "json"
+      ],
+      "relatedTerms": [
+        "hook",
+        "additional-context",
+        "permission-decision"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "http-hook",
+      "english": "HTTP Hook",
+      "category": "hooks",
+      "pronunciation": "/ˌeɪtʃ.tiːˌtiːˈpiː hʊk/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "hook",
+        "http",
+        "remote"
+      ],
+      "relatedTerms": [
+        "hook",
+        "matcher"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "message-display",
+      "english": "MessageDisplay",
+      "category": "hooks",
+      "pronunciation": "/ˈmɛsɪdʒ dɪˈspleɪ/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "hook",
+        "display"
+      ],
+      "relatedTerms": [
+        "hook",
+        "notification-hook"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "plugin-marketplace-add",
+      "english": "/plugin marketplace add",
+      "category": "plugins",
+      "pronunciation": "slash plug-in MAR-ket-place ad",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "plugins",
+        "marketplace",
+        "command"
+      ],
+      "relatedTerms": [
+        "marketplace",
+        "plugin",
+        "plugin-install"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "plugin-install",
+      "english": "/plugin install",
+      "category": "plugins",
+      "pronunciation": "/slash plug-in ɪnˈstɔːl/",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "plugins",
+        "install",
+        "command"
+      ],
+      "relatedTerms": [
+        "plugin",
+        "marketplace",
+        "plugin-marketplace-add"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "official-marketplace",
+      "english": "Official Marketplace",
+      "category": "plugins",
+      "pronunciation": "/əˈfɪʃəl ˈmɑːrkɪtpleɪs/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "plugins",
+        "marketplace",
+        "anthropic"
+      ],
+      "relatedTerms": [
+        "marketplace",
+        "community-marketplace",
+        "plugin"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "community-marketplace",
+      "english": "Community Marketplace",
+      "category": "plugins",
+      "pronunciation": "/kəˈmjuːnəti ˈmɑːrkɪtpleɪs/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "plugins",
+        "marketplace",
+        "third-party"
+      ],
+      "relatedTerms": [
+        "marketplace",
+        "official-marketplace",
+        "plugin"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "namespacing",
+      "english": "Namespacing",
+      "category": "plugins",
+      "pronunciation": "/ˈneɪmˌspeɪsɪŋ/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "plugins",
+        "naming"
+      ],
+      "relatedTerms": [
+        "plugin",
+        "skill",
+        "plugin-command"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "installation-scope",
+      "english": "Installation Scope",
+      "category": "plugins",
+      "pronunciation": "/ˌɪnstəˈleɪʃən skoʊp/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "plugins",
+        "scope"
+      ],
+      "relatedTerms": [
+        "plugin",
+        "plugin-install",
+        "settings-precedence"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "claude-plugin-dir",
+      "english": ".claude-plugin",
+      "category": "plugins",
+      "pronunciation": "/dɒt ˈklɔːd ˈplʌɡɪn/ (dot claude-plug-in)",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "plugins",
+        "config",
+        "folder"
+      ],
+      "relatedTerms": [
+        "plugin",
+        "plugin-manifest",
+        "plugin-hooks-json"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "plugin-hooks-json",
+      "english": "hooks.json",
+      "category": "plugins",
+      "pronunciation": "/hʊks ˈdʒeɪsɒn/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "plugins",
+        "hooks",
+        "config"
+      ],
+      "relatedTerms": [
+        "plugin",
+        "hook",
+        "plugin-manifest"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "reload-plugins",
+      "english": "/reload-plugins",
+      "category": "plugins",
+      "pronunciation": "/slæʃ riːˈloʊd ˈplʌɡɪnz/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "plugins",
+        "dev",
+        "command"
+      ],
+      "relatedTerms": [
+        "plugin",
+        "plugin-command",
+        "plugin-install"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "plugin-dir-flag",
+      "english": "--plugin-dir",
+      "category": "plugins",
+      "pronunciation": "dash dash plug-in dir",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "plugins",
+        "dev",
+        "cli"
+      ],
+      "relatedTerms": [
+        "plugin",
+        "plugin-install",
+        "claude-plugin-dir"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "lsp-server",
+      "english": "LSP Server",
+      "category": "plugins",
+      "pronunciation": "/ˌel ɛs ˈpiː ˈsɜːrvər/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "plugins",
+        "lsp",
+        "code-intel"
+      ],
+      "relatedTerms": [
+        "plugin",
+        "lsp-tool"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "bundled-skill",
+      "english": "Bundled Skill",
+      "category": "skills",
+      "pronunciation": "/ˈbʌn.dəld skɪl/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "skills",
+        "built-in"
+      ],
+      "relatedTerms": [
+        "skill",
+        "code-review-command",
+        "personal-skill"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "personal-skill",
+      "english": "Personal Skill",
+      "category": "skills",
+      "pronunciation": "/ˈpɜːrsənl skɪl/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "skills",
+        "scope",
+        "global"
+      ],
+      "relatedTerms": [
+        "skill",
+        "claude-skills-dir",
+        "bundled-skill"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "claude-skills-dir",
+      "english": ".claude/skills/",
+      "category": "skills",
+      "pronunciation": "/dɒt klɔːd skɪlz/ (dot-claude-skills)",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "skills",
+        "folder",
+        "project"
+      ],
+      "relatedTerms": [
+        "skill",
+        "claude-dir",
+        "personal-skill"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "allowed-tools-frontmatter",
+      "english": "allowed-tools",
+      "category": "skills",
+      "pronunciation": "/əˈlaʊd tuːlz/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "skills",
+        "frontmatter",
+        "permission"
+      ],
+      "relatedTerms": [
+        "frontmatter",
+        "skill-md",
+        "allowed-tools-setting"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "arguments-placeholder",
+      "english": "$ARGUMENTS",
+      "category": "skills",
+      "pronunciation": "/ˈdɑːlər ˈɑːrɡjumənts/ (dollar ARG-yoo-ments)",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "skills",
+        "placeholder",
+        "command"
+      ],
+      "relatedTerms": [
+        "skill",
+        "skill-md",
+        "slash-command"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "supporting-files",
+      "english": "Supporting Files",
+      "category": "skills",
+      "pronunciation": "/səˈpɔːrtɪŋ faɪlz/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "skills",
+        "files",
+        "context"
+      ],
+      "relatedTerms": [
+        "skill",
+        "progressive-disclosure",
+        "skill-md"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "disable-model-invocation",
+      "english": "disable-model-invocation",
+      "category": "skills",
+      "pronunciation": "/dɪsˈeɪbəl ˈmɒdəl ˌɪnvəˈkeɪʃən/",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "skills",
+        "frontmatter",
+        "manual"
+      ],
+      "relatedTerms": [
+        "frontmatter",
+        "skill-md",
+        "trigger"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "context-fork",
+      "english": "context: fork",
+      "category": "skills",
+      "pronunciation": "/ˈkɒn.tekst fɔːrk/ (KON-tekst fork)",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "skills",
+        "frontmatter",
+        "isolation"
+      ],
+      "relatedTerms": [
+        "frontmatter",
+        "skill",
+        "isolation-worktree"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "dynamic-context-injection",
+      "english": "Dynamic Context Injection",
+      "category": "skills",
+      "pronunciation": "/daɪˈnæmɪk ˈkɒntɛkst ɪnˈdʒɛkʃən/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "skills",
+        "context",
+        "shell"
+      ],
+      "relatedTerms": [
+        "skill",
+        "skill-md",
+        "frontmatter"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "interactive-mode",
+      "english": "Interactive Mode",
+      "category": "cli",
+      "pronunciation": "interactive mode; just type \"claude\" and press enter",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "cli",
+        "mode"
+      ],
+      "relatedTerms": [
+        "headless-mode",
+        "print-flag",
+        "session"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "print-flag",
+      "english": "--print",
+      "category": "cli",
+      "pronunciation": "--print = dash dash print; -p = dash p",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "flag",
+        "headless"
+      ],
+      "relatedTerms": [
+        "headless-mode",
+        "interactive-mode",
+        "output-format-flag"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "continue-flag",
+      "english": "--continue",
+      "category": "cli",
+      "pronunciation": "dash dash continue; short form dash c. claude --continue = claude dash dash continue.",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "flag",
+        "resume"
+      ],
+      "relatedTerms": [
+        "resume-flag",
+        "session",
+        "slash-command"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "model-flag",
+      "english": "--model",
+      "category": "cli",
+      "pronunciation": "dash dash model",
+      "difficulty": 1,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "flag",
+        "model"
+      ],
+      "relatedTerms": [
+        "model-command",
+        "session"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "resume-flag",
+      "english": "--resume",
+      "category": "cli",
+      "pronunciation": "dash dash resume; short form -r = dash r",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "flag",
+        "resume"
+      ],
+      "relatedTerms": [
+        "continue-flag",
+        "resume-command",
+        "fork-session-flag"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "permission-mode-flag",
+      "english": "--permission-mode",
+      "category": "cli",
+      "pronunciation": "dash dash permission dash mode",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "flag",
+        "permission"
+      ],
+      "relatedTerms": [
+        "permission-mode",
+        "print-flag"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "claude-mcp-add",
+      "english": "claude mcp add",
+      "category": "cli",
+      "pronunciation": "claude m-c-p add",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "mcp",
+        "setup"
+      ],
+      "relatedTerms": [
+        "mcp-server",
+        "mcp-json",
+        "claude-mcp-serve"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "output-format-flag",
+      "english": "--output-format",
+      "category": "cli",
+      "pronunciation": "dash dash output dash format",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "flag",
+        "automation"
+      ],
+      "relatedTerms": [
+        "print-flag",
+        "stream-json"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "stream-json",
+      "english": "stream-json",
+      "category": "cli",
+      "pronunciation": "stream dash json (唸作 stream-jay-son)",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "format",
+        "automation"
+      ],
+      "relatedTerms": [
+        "output-format-flag",
+        "print-flag",
+        "headless-mode"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "append-system-prompt-flag",
+      "english": "--append-system-prompt",
+      "category": "cli",
+      "pronunciation": "dash dash append system prompt",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "flag",
+        "prompt"
+      ],
+      "relatedTerms": [
+        "system-prompt",
+        "print-flag"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "mcp-config-flag",
+      "english": "--mcp-config",
+      "category": "cli",
+      "pronunciation": "dash dash m-c-p dash config",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "flag",
+        "mcp"
+      ],
+      "relatedTerms": [
+        "mcp-json",
+        "mcp-server",
+        "claude-mcp-add"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "max-turns-flag",
+      "english": "--max-turns",
+      "category": "cli",
+      "pronunciation": "dash dash max turns",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "flag",
+        "automation"
+      ],
+      "relatedTerms": [
+        "print-flag",
+        "interactive-mode"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "fork-session-flag",
+      "english": "--fork-session",
+      "category": "cli",
+      "pronunciation": "dash dash fork session",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "flag",
+        "session"
+      ],
+      "relatedTerms": [
+        "resume-flag",
+        "session"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "claude-mcp-serve",
+      "english": "claude mcp serve",
+      "category": "cli",
+      "pronunciation": "claude m-c-p serve",
+      "difficulty": 3,
+      "isEnglishOnly": true,
+      "tags": [
+        "cli",
+        "mcp",
+        "server"
+      ],
+      "relatedTerms": [
+        "mcp-server",
+        "stdio",
+        "claude-mcp-add"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "auto-compact",
+      "english": "Auto-Compact",
+      "category": "context",
+      "pronunciation": "/ˈɔː.toʊ kəmˈpækt/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "context",
+        "compaction",
+        "auto"
+      ],
+      "relatedTerms": [
+        "compaction",
+        "context-window",
+        "microcompact"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "checkpoint",
+      "english": "Checkpoint",
+      "category": "context",
+      "pronunciation": "/ˈtʃɛkpɔɪnt/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "context",
+        "rewind",
+        "snapshot"
+      ],
+      "relatedTerms": [
+        "rewind-command",
+        "compaction",
+        "context-window"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "microcompact",
+      "english": "Microcompact",
+      "category": "context",
+      "pronunciation": "/ˈmaɪkroʊkəmˌpækt/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "context",
+        "compaction"
+      ],
+      "relatedTerms": [
+        "auto-compact",
+        "compaction",
+        "context-window"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "effort-level",
+      "english": "Effort Level",
+      "category": "context",
+      "pronunciation": "/ˈɛfərt ˈlɛvəl/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "context",
+        "reasoning",
+        "effort"
+      ],
+      "relatedTerms": [
+        "effort-command",
+        "extended-thinking",
+        "token"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "memory-md",
+      "english": "MEMORY.md",
+      "category": "context",
+      "pronunciation": "/ˈmɛm.ər.i dɒt ɛm diː/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "context",
+        "memory",
+        "file"
+      ],
+      "relatedTerms": [
+        "claude-md",
+        "memory-command",
+        "memory-tool"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "context-editing",
+      "english": "Context Editing",
+      "category": "context",
+      "pronunciation": "/ˈkɒn.tekst ˈɛd.ɪt.ɪŋ/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "context",
+        "api",
+        "cleanup"
+      ],
+      "relatedTerms": [
+        "context-window",
+        "compaction",
+        "token"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "adaptive-thinking",
+      "english": "Adaptive Thinking",
+      "category": "prompting",
+      "pronunciation": "/əˈdæptɪv ˈθɪŋkɪŋ/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "prompting",
+        "thinking",
+        "reasoning"
+      ],
+      "relatedTerms": [
+        "extended-thinking",
+        "effort-level",
+        "thinking-budget"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "interleaved-thinking",
+      "english": "Interleaved Thinking",
+      "category": "prompting",
+      "pronunciation": "/ˌɪntərˈliːvd ˈθɪŋkɪŋ/",
+      "difficulty": 3,
+      "isEnglishOnly": false,
+      "tags": [
+        "prompting",
+        "thinking",
+        "tools"
+      ],
+      "relatedTerms": [
+        "extended-thinking",
+        "chain-of-thought",
+        "tool-use"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "thinking-budget",
+      "english": "Thinking Budget",
+      "category": "prompting",
+      "pronunciation": "/ˈθɪŋkɪŋ ˈbʌdʒɪt/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "prompting",
+        "thinking",
+        "deprecated"
+      ],
+      "relatedTerms": [
+        "extended-thinking",
+        "adaptive-thinking",
+        "token"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "claude-code-web",
+      "english": "Claude Code on the Web",
+      "category": "misc",
+      "pronunciation": "/klɔːd koʊd ɒn ðə wɛb/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "misc",
+        "cloud",
+        "web"
+      ],
+      "relatedTerms": [
+        "sandbox",
+        "desktop-app",
+        "teleport-command"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "sandbox",
+      "english": "Sandbox",
+      "category": "misc",
+      "pronunciation": "/ˈsændbɑks/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "misc",
+        "isolation",
+        "cloud"
+      ],
+      "relatedTerms": [
+        "sandboxing",
+        "claude-code-web",
+        "bypass-permissions"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "vscode-extension",
+      "english": "VS Code Extension",
+      "category": "misc",
+      "pronunciation": "/ˌviː ˈɛs koʊd ɪkˈstɛnʃən/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "misc",
+        "ide",
+        "vscode"
+      ],
+      "relatedTerms": [
+        "desktop-app",
+        "jetbrains-plugin",
+        "claude-code-web"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "routines",
+      "english": "Routines",
+      "category": "misc",
+      "pronunciation": "/ruːˈtiːnz/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "misc",
+        "automation",
+        "schedule"
+      ],
+      "relatedTerms": [
+        "claude-code-web",
+        "cron-create-tool",
+        "auto-fix-prs"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "ultraplan",
+      "english": "Ultraplan",
+      "category": "misc",
+      "pronunciation": "/ˈʌltrəplæn/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "misc",
+        "cloud",
+        "plan"
+      ],
+      "relatedTerms": [
+        "plan-mode",
+        "claude-code-web",
+        "ultrareview"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "ultrareview",
+      "english": "Ultrareview",
+      "category": "misc",
+      "pronunciation": "/ˈʌltrəˌrɪvjuː/",
+      "difficulty": 2,
+      "isEnglishOnly": true,
+      "tags": [
+        "misc",
+        "cloud",
+        "review"
+      ],
+      "relatedTerms": [
+        "code-review-command",
+        "security-review-command",
+        "ultraplan"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "auto-fix-prs",
+      "english": "Auto-fix PRs",
+      "category": "misc",
+      "pronunciation": "/ˈɔː.toʊ fɪks ˌpiː ˈɑːr ˈɛs/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "misc",
+        "ci",
+        "pr"
+      ],
+      "relatedTerms": [
+        "code-review-command",
+        "routines",
+        "claude-code-web"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "desktop-app",
+      "english": "Desktop App",
+      "category": "misc",
+      "pronunciation": "/ˈdɛsk.tɒp æp/",
+      "difficulty": 1,
+      "isEnglishOnly": false,
+      "tags": [
+        "misc",
+        "app",
+        "desktop"
+      ],
+      "relatedTerms": [
+        "vscode-extension",
+        "claude-code-web",
+        "session"
+      ],
+      "addedDate": "2026-06-04"
+    },
+    {
+      "id": "jetbrains-plugin",
+      "english": "JetBrains Plugin",
+      "category": "misc",
+      "pronunciation": "/ˈdʒɛtˌbreɪnz ˈplʌɡɪn/",
+      "difficulty": 2,
+      "isEnglishOnly": false,
+      "tags": [
+        "misc",
+        "ide",
+        "jetbrains"
+      ],
+      "relatedTerms": [
+        "vscode-extension",
+        "desktop-app",
+        "plugin"
+      ],
+      "addedDate": "2026-06-04"
+    }
+  ]
+}

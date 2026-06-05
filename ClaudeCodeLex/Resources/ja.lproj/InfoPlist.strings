@@ -1,0 +1,3 @@
+/* Localized Info.plist usage strings — Shadow Read (Speech framework). */
+"NSMicrophoneUsageDescription" = "AgenticLex はシャドーイングでマイクを使い、単語を声に出して練習できるようにします。音声は端末内で処理されます。";
+"NSSpeechRecognitionUsageDescription" = "AgenticLex はシャドーイング中に話した単語を端末内で音声認識し、やさしい発音フィードバックを返します。";

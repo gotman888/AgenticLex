@@ -1,0 +1,305 @@
+// English (base) — Localizable.strings
+
+"app.name"     = "AgenticLex";
+"app.tagline"  = "Learn the language of AI coding";
+
+// Tabs
+"today.tab"    = "Today";
+"browse.tab"   = "Browse";
+"quiz.tab"     = "Quiz";
+"settings.tab" = "Settings";
+
+// Today
+"today.subtitle"       = "Lexi prepared some words for you ☕";
+"today.picks"          = "Today's Picks";
+"today.start"          = "Start learning";
+"today.listen"         = "Listen Mode";
+"today.random"         = "Surprise me";
+"today.allDone"        = "All done for today! 🌱 Take a break.";
+"today.wotd"           = "Word of the Day";
+"today.recentMastered" = "Recently mastered";
+"today.noMastered"     = "Your first mastered word will live here forever 🌱";
+
+// Time-of-day greetings (Lexi-style warm)
+"today.greet.morning"   = "Good morning! Ready to make today click?";
+"today.greet.noon"      = "Hi! A few words at lunch?";
+"today.greet.afternoon" = "Afternoon learner — let's go 🚀";
+"today.greet.evening"   = "Evening! One more word and you've got it.";
+"today.greet.night"     = "Lexi can't sleep — wanna join? 🦉";
+
+// Browse
+"browse.searchPrompt"  = "Search terms…";
+"browse.noResults" = "No terms match your search. Try another word.";
+
+// Categories
+"category.all"        = "All";
+
+// Term Detail
+"detail.translation"  = "Translation";
+"detail.example"      = "In Context";
+"detail.memoryHook"   = "Memory Hook";
+"detail.realUse"      = "Real-world Use";
+"detail.commonConfusion" = "Easily Confused";
+"detail.related"      = "Related";
+"detail.fav"          = "Favorite";
+"detail.unfav"        = "Unfavorite";
+"detail.markMastered" = "Mark Mastered";
+"detail.share"        = "Share";
+
+// Concept Map
+"conceptMap.title" = "Concept Map";
+"conceptMap.hint"  = "Tap a node to explore related terms";
+
+// Quiz
+"quiz.setup.count"     = "Number of Questions";
+"quiz.setup.direction" = "Question Type";
+"quiz.setup.start"     = "Start Quiz";
+"quiz.dir.enToL1"      = "English → My language";
+"quiz.dir.l1ToEn"      = "My language → English";
+"quiz.dir.mixed"       = "Mixed";
+"quiz.result.perfect"  = "Perfect! Lexi is so proud 🎉";
+"quiz.result.good"     = "Nicely done!";
+"quiz.result.tryAgain" = "No worries — give it another shot 💪";
+"quiz.result.backHome" = "Back to Home";
+
+// Review
+"review.next" = "Next";
+"review.done" = "All done for today!";
+
+// Settings
+"settings.section.learning"   = "LEARNING";
+"settings.section.audio"      = "AUDIO";
+"settings.section.appearance" = "APPEARANCE";
+"settings.section.data"       = "DATA";
+"settings.section.about"      = "ABOUT";
+
+"settings.uiLanguage"     = "UI Language";
+"settings.nativeLanguage" = "My Native Language";
+"settings.dailyGoal"      = "Daily Goal";
+"settings.speed"          = "Speech Speed";
+"settings.autoplay"       = "Auto-play on open";
+"settings.theme"          = "Theme";
+"settings.theme.auto"     = "Auto";
+"settings.theme.light"    = "Light";
+"settings.theme.dark"     = "Dark";
+"settings.resetAll"       = "Reset all progress";
+"settings.resetConfirm"   = "This will clear all your learning progress. Cannot be undone.";
+"settings.version"        = "Version";
+"settings.github"         = "Open Source on GitHub";
+"settings.privacy"        = "Privacy Policy";
+"settings.feedback"       = "Send Feedback";
+"detail.aiTranslation" = "AI translation — not yet reviewed";
+"detail.report" = "Report a problem or suggest a fix";
+"feedback.subject" = "AgenticLex feedback";
+"report.intro" = "What could be better? Describe it below, then send. (Please keep the details at the bottom — they help us help you.)";
+
+// Notifications
+"settings.section.notifications" = "NOTIFICATIONS";
+"settings.notify.daily"          = "Daily reminder";
+"settings.notify.time"           = "Reminder time";
+"notify.daily.title"             = "Lexi misses you 🦉";
+"notify.daily.body"              = "A couple of words today? Lexi's waiting.";
+"notify.daily.body.streak"       = "Keep your %d-day streak alive! 🔥";
+
+// Common
+"common.cancel" = "Cancel";
+"common.ok"     = "OK";
+"common.retry"  = "Retry";
+
+// Accessibility
+"a11y.playPronunciation" = "Play pronunciation";
+
+// Onboarding
+"onboarding.back"            = "Back";
+"onboarding.next"            = "Next";
+"onboarding.start"           = "Get Started";
+"onboarding.disclaimer.title" = "Independent app — not affiliated with Anthropic";
+"onboarding.disclaimer.body"  = "AgenticLex is unofficial. Claude™ and Claude Code™ are trademarks of Anthropic PBC; Cursor™ of Anysphere Inc. All trademarks used for descriptive purposes only.";
+"onboarding.lang.title"      = "Choose your languages";
+"onboarding.lang.subtitle"   = "These two settings are intentionally separate. Many learners want an English interface but native-language hints.";
+"onboarding.uiLang.label"    = "App interface language";
+"onboarding.uiLang.help"     = "Menus, buttons, and labels.";
+"onboarding.nativeLang.label" = "My native language";
+"onboarding.nativeLang.help"  = "Used to show translation, definition, and memory hooks alongside each English term.";
+"onboarding.comingSoon"      = "Coming soon";
+"onboarding.goal.title"      = "Daily goal";
+"onboarding.goal.subtitle"   = "How many words a day? You can change this any time.";
+"onboarding.goal.relaxed"    = "words / day — Easy does it";
+"onboarding.goal.regular"    = "words / day — Recommended";
+"onboarding.goal.serious"    = "words / day — Serious learner";
+"onboarding.goal.intense"    = "words / day — Beast mode";
+
+// Tip Jar
+"settings.section.support"   = "SUPPORT DEVELOPMENT";
+"tipjar.title"               = "Buy me a coffee";
+"tipjar.subtitle"            = "AgenticLex is free forever. If it helped you, a small tip keeps it growing.";
+"tipjar.tier.small"          = "Quick thank-you";
+"tipjar.tier.medium"         = "Support a month of updates";
+"tipjar.tier.large"          = "Sponsor a season of work";
+"tipjar.lifetimeFmt"         = "You've contributed ~$%.2f total — thank you 🙏";
+"tipjar.note"                = "100% voluntary. No features are locked behind tips.";
+"tipjar.unavailable"         = "Couldn't load the tip options. Check your connection and try again.";
+"tipjar.thanks.title"        = "Thank you ❤️";
+"tipjar.thanks.body"         = "Your support keeps AgenticLex free and growing for everyone.";
+
+// Term detail
+"term.englishOnly.note"      = "Industry uses the English form";
+
+// Onboarding extras
+"onboarding.lexi.intro"     = "Hi! I'm Lexi — your learning buddy 🦉";
+
+// Audio
+"audio.speed.label"          = "Speech speed";
+"audio.speed.slow"           = "Slow";
+"audio.speed.normal"         = "Normal";
+"audio.speed.fast"           = "Fast";
+"a11y.longPressForSpeed"     = "Long press to choose speed";
+
+// Listen Mode
+"listen.tab"      = "Listen Mode";
+"listen.title"    = "Listen Mode";
+"listen.subtitle" = "Pure audio — no need to look at the screen.";
+"listen.start"    = "Start listening";
+"listen.stop"     = "Stop";
+"listen.hint"     = "Plays in the background. Headphones recommended. Press play, lock your phone, learn while you walk.";
+
+// Celebration
+"celebration.cool" = "Nice!";
+
+// Achievements
+"achv.title"          = "Achievements";
+"achv.subtitle.fmt"   = "%d / %d unlocked";
+"achv.firstWord.title" = "First Word";
+"achv.firstWord.desc"  = "Master your first term";
+"achv.bookworm.title"  = "Bookworm";
+"achv.bookworm.desc"   = "Master 10 terms";
+"achv.scholar.title"   = "Scholar";
+"achv.scholar.desc"    = "Master 30 terms";
+"achv.master.title"    = "Master";
+"achv.master.desc"     = "Master all terms in the dictionary";
+"achv.spark.title"     = "Spark";
+"achv.spark.desc"      = "3-day streak";
+"achv.flame.title"     = "Flame";
+"achv.flame.desc"      = "7-day streak";
+"achv.blaze.title"     = "Blaze";
+"achv.blaze.desc"      = "30-day streak";
+"achv.nightOwl.title"  = "Night Owl";
+"achv.nightOwl.desc"   = "Studied between midnight and 4am";
+"achv.earlyBird.title" = "Early Bird";
+"achv.earlyBird.desc"  = "Studied between 5am and 8am";
+"achv.coffeeHelper.title" = "Coffee Helper";
+"achv.coffeeHelper.desc"  = "Sent a tip to keep Lexi going";
+
+// ===== AI Boost (BYOK) =====
+"aiboost.title"           = "AI Boost";
+"aiboost.active"          = "Active";
+"aiboost.intro"           = "Use your own API keys to upgrade Lexi. We never see your keys — requests go directly to the provider.";
+"aiboost.voice.section"   = "BETTER VOICES";
+"aiboost.voice.footer"    = "Cloud voices sound far more natural. Costs go to your own account.";
+"aiboost.chat.section"    = "ASK LEXI (chat)";
+"aiboost.chat.footer"     = "Have a real conversation about any term using your preferred AI.";
+"aiboost.free"            = "Free";
+"aiboost.keyPlaceholder"  = "Paste your API key";
+"aiboost.save"            = "Save";
+"aiboost.getKey"          = "Get your key";
+"aiboost.voicePicker"     = "Voice";
+"aiboost.modelPicker"     = "Model";
+"aiboost.test"            = "Test voice";
+"aiboost.testing"         = "Testing…";
+"aiboost.testOK"          = "Worked great ✨";
+"aiboost.testFailed"      = "Test failed — check the key";
+"aiboost.privacy"         = "Keys live in iOS Keychain. Requests go directly to the AI provider; AgenticLex servers are not involved.";
+
+"aiboost.disclosure.title" = "How BYOK works";
+"aiboost.disclosure.body"  = "Your API keys are stored locally in iOS Keychain. AgenticLex never sees them. All requests go directly to the AI provider you chose. Please review the provider's privacy policy.";
+
+// Cost hints
+"ai.cost.free"             = "Free · offline";
+"ai.cost.openaiTTS"        = "~$0.0003 per word · OpenAI billing";
+"ai.cost.elevenlabs"       = "~$0.003 per word · ElevenLabs billing";
+
+// ===== Ask Lexi =====
+"askLexi.title"            = "Ask Lexi";
+"askLexi.button.title"     = "💬 Ask Lexi about this";
+"askLexi.button.hint"      = "Have a chat with Lexi using your AI key";
+"askLexi.intro"            = "Hi! Ask me anything about this term — examples, code, comparisons. 🦉";
+"askLexi.inputPlaceholder" = "Ask anything…";
+"askLexi.errorTitle"       = "Couldn't reach the AI";
+"askLexi.qp.eli5"          = "Explain simply";
+"askLexi.qp.examples"      = "More examples";
+"askLexi.qp.code"          = "Show code";
+"askLexi.qp.compare"       = "Compare similar";
+"askLexi.poweredBy.claude" = "Powered by Claude · your key";
+"askLexi.poweredBy.openai" = "Powered by GPT · your key";
+"askLexi.poweredBy.gemini" = "Powered by Gemini · your key";
+
+// Siri Shortcuts
+"siri.wotd.title"   = "Word of the Day";
+"siri.wotd.desc"    = "Open AgenticLex to today's word";
+"siri.listen.title" = "Listen Mode";
+"siri.listen.desc"  = "Start Listen Mode in AgenticLex";
+
+// Learning Path
+"path.title"             = "Learning Path";
+"path.intro"             = "Master the words level by level — at your own pace.";
+"path.levelNumFmt"       = "Level %d";
+"path.level.foundations" = "Foundations";
+"path.level.core"        = "Core Concepts";
+"path.level.advanced"    = "Advanced";
+"path.progressFmt"       = "%d / %d mastered";
+"path.complete"          = "Complete!";
+
+// Shadow Read
+"today.shadow"           = "Shadow Read";
+"shadow.intro"           = "Listen to each term, then say it back. Lexi is right here practising with you.";
+"shadow.start"           = "Start";
+"shadow.replay"          = "Hear it again";
+"shadow.tapToSpeak"      = "Tap and say it";
+"shadow.listening"       = "Listening…";
+"shadow.heardFmt"        = "Lexi heard: %@";
+"shadow.great"           = "Spot on! 🎉";
+"shadow.close"           = "So close — nice try!";
+"shadow.tryAgain"        = "Tricky one — keep going 💪";
+"shadow.finish"          = "Finish";
+"shadow.summaryFmt"      = "You shadowed %d terms!";
+"shadow.summaryGreatFmt" = "%d sounded spot on 🌟";
+"shadow.again"           = "Practice again";
+"shadow.unavailable"     = "Shadow Read needs on-device speech recognition, which this device can't do. Every other way to learn is still here. 🦉";
+
+// Dictionary updates (OTA)
+"settings.dict.autoUpdate" = "Auto-update dictionary";
+"settings.dict.note"       = "When on, checks GitHub for new terms. Off by default — the app works fully offline.";
+"settings.dict.checking"   = "Checking…";
+"settings.dict.upToDate"   = "Dictionary is up to date";
+"settings.dict.updated"    = "Dictionary updated — applies on next launch";
+"settings.dict.thanks" = "🌱 Thanks to learner feedback — your reports help shape the dictionary.";
+"settings.dict.failed"     = "Couldn't check for updates";
+
+
+// AI disclosure (Apple Guideline 5.1.1(i) / 5.1.2(i))
+"aidisclosure.nav.title" = "AI Data Sharing Notice";
+"aidisclosure.header.title" = "Please read before using AI features";
+"aidisclosure.header.body" = "To meet Apple's privacy review requirements, we must clearly tell you what data is sent, who receives it, and how it is used before you use any AI feature.";
+"aidisclosure.sec.send.title" = "What we send";
+"aidisclosure.sec.send.body" = "Only the **text** you type and submit to the AI assistant. In multi-turn conversations, the necessary chat history is also sent so the AI can stay on topic.";
+"aidisclosure.sec.recipients.title" = "Who receives the data";
+"aidisclosure.sec.recipients.body" = "Up to four third-party AI services may receive your input, depending on which provider you enable in Settings → AI Boost:\n\n• **Anthropic, PBC** (San Francisco, CA, USA) — Claude API for AI conversation\n• **OpenAI, L.L.C.** (San Francisco, CA, USA) — GPT for AI conversation; TTS for voice playback\n• **Google LLC** (Mountain View, CA, USA) — Gemini API for AI conversation\n• **ElevenLabs Inc.** (New York, NY, USA) — TTS for voice playback\n\nOnly providers you actively configure with your own API key receive any data. No data is sent to providers you have not enabled.";
+"aidisclosure.sec.purpose.title" = "Purpose";
+"aidisclosure.sec.purpose.body" = "**Only to generate your AI response for the current request.** Each provider's default policy is not to use API data for model training; data is retained briefly (up to ~30 days) for safety and abuse detection, then deleted.";
+"aidisclosure.sec.notSent.title" = "What we do NOT send";
+"aidisclosure.sec.notSent.body" = "Your Apple ID, device identifier, name, contact info, location, contacts, photos and IDFA are never transmitted. All transmissions use TLS encryption.";
+"aidisclosure.sec.choice.title" = "Your choice";
+"aidisclosure.sec.choice.body" = "Choosing **Disagree** disables AI features while keeping every other part of the app fully usable.\n\nYou can withdraw consent any time under **Settings → Privacy → AI data sharing consent**.";
+"aidisclosure.button.privacy" = "View full Privacy Policy";
+"aidisclosure.button.agree" = "Agree and Continue";
+"aidisclosure.button.decline" = "Disagree, disable AI features";
+"aidisclosure.settings.section" = "Privacy";
+"aidisclosure.settings.row.title" = "AI data sharing consent";
+"aidisclosure.settings.status.accepted" = "Accepted";
+"aidisclosure.settings.status.notAccepted" = "Not accepted";
+"aidisclosure.settings.revoke" = "Revoke";
+"aidisclosure.settings.confirm.title" = "Revoke consent?";
+"aidisclosure.settings.confirm.message" = "AI features will be disabled immediately. You can re-consent later.";
+"aidisclosure.settings.confirm.cancel" = "Cancel";
+"aidisclosure.settings.confirm.revoke" = "Revoke";
+"aidisclosure.error.notConsented" = "AI features need consent. Re-enable under Settings → Privacy.";

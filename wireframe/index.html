@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClaudeCodeLex — Interactive Wireframe</title>
+<style>
+  :root {
+    --brand-primary: #7C5BFF;
+    --brand-primary-dim: #5430E5;
+    --brand-secondary: #FF9A3C;
+    --bg: #f0eef7;
+    --bg-card: #ffffff;
+    --text: #0E0E12;
+    --text-sec: #6B6B7A;
+    --divider: #E5E5EA;
+    --success: #34C759;
+  }
+  body {
+    font-family: -apple-system, "SF Pro Display", "Helvetica Neue", "PingFang TC", sans-serif;
+    background: var(--bg);
+    margin: 0;
+    padding: 24px;
+    color: var(--text);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+  }
+  h1.page-title {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 16px 0;
+    color: var(--text);
+  }
+  p.page-sub {
+    width: 100%;
+    text-align: center;
+    color: var(--text-sec);
+    margin: 0 0 24px 0;
+  }
+  .phone {
+    width: 390px;
+    height: 844px;
+    background: var(--bg-card);
+    border-radius: 48px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12), inset 0 0 0 8px #1a1a22;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .phone-label {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    color: var(--text-sec);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .notch {
+    width: 120px;
+    height: 28px;
+    background: #1a1a22;
+    border-radius: 0 0 18px 18px;
+    margin: 0 auto;
+  }
+  .screen {
+    flex: 1;
+    padding: 16px 20px 0 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--brand-primary);
+  }
+  .streak {
+    background: rgba(255,154,60,0.15);
+    color: var(--brand-secondary);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .greeting {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 4px 0;
+  }
+  .sub {
+    color: var(--text-sec);
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-sec);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 8px 0 8px 0;
+  }
+  .h-scroll {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    margin: 0 -20px 16px -20px;
+    padding: 0 20px 8px 20px;
+  }
+  .card-mini {
+    min-width: 180px;
+    background: linear-gradient(135deg, #f6f4ff 0%, #ece6ff 100%);
+    border-radius: 16px;
+    padding: 14px;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .chip {
+    display: inline-block;
+    background: rgba(124,91,255,0.12);
+    color: var(--brand-primary);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+  }
+  .term-en {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 4px 0;
+  }
+  .term-zh {
+    color: var(--text-sec);
+    font-size: 13px;
+    margin: 0 0 8px 0;
+  }
+  .speaker {
+    width: 28px;
+    height: 28px;
+    background: var(--brand-primary);
+    color: white;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .speaker.big {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    font-size: 28px;
+    box-shadow: 0 8px 20px rgba(124,91,255,0.3);
+  }
+  .cta {
+    background: var(--brand-primary);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    width: 100%;
+    margin: 12px 0;
+    cursor: pointer;
+  }
+  .list-row {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--divider);
+    cursor: pointer;
+  }
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+  .dot-new { background: #C7C7CC; }
+  .dot-learning { background: #4A90E2; }
+  .dot-mastered { background: var(--success); }
+  .row-text {
+    flex: 1;
+  }
+  .row-en {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .row-zh {
+    color: var(--text-sec);
+    font-size: 13px;
+  }
+  .tabbar {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--divider);
+    padding: 12px 0 28px 0;
+    background: var(--bg-card);
+  }
+  .tab {
+    text-align: center;
+    color: var(--text-sec);
+    font-size: 11px;
+    cursor: pointer;
+  }
+  .tab.active { color: var(--brand-primary); font-weight: 600; }
+  .tab-icon { font-size: 22px; display: block; margin-bottom: 2px; }
+  /* Detail */
+  .hero {
+    background: linear-gradient(135deg, #f6f4ff 0%, #ece6ff 100%);
+    border-radius: 24px;
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .hero-term {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 12px 0 4px 0;
+    line-height: 1.1;
+  }
+  .ipa {
+    color: var(--text-sec);
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .block {
+    background: #fafafe;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .block-label {
+    color: var(--text-sec);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+  }
+  .block-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+  }
+  .block-body {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .hint {
+    background: linear-gradient(135deg, #fff7ea, #ffeed3);
+    color: #92590f;
+  }
+  /* Quiz */
+  .progress {
+    height: 4px;
+    background: var(--divider);
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 8px 0 24px 0;
+  }
+  .progress > div {
+    width: 60%;
+    background: var(--brand-primary);
+    height: 100%;
+  }
+  .question {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 32px 0;
+    line-height: 1.2;
+  }
+  .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .option {
+    background: white;
+    border: 2px solid var(--divider);
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .option.correct { border-color: var(--success); background: rgba(52,199,89,0.08); }
+  .settings-section {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  .settings-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--divider);
+  }
+  .settings-row:last-child { border-bottom: none; }
+  .settings-row span:last-child { color: var(--text-sec); }
+</style>
+</head>
+<body>
+
+<h1 class="page-title">ClaudeCodeLex — Interactive Wireframe (v0.1)</h1>
+<p class="page-sub">5 個關鍵畫面對照圖。實際 SwiftUI 實作會用相同視覺 token。</p>
+
+<!-- 1. HOME -->
+<div class="phone">
+  <span class="phone-label">① Today (Home Tab)</span>
+  <div class="notch"></div>
+  <div class="screen">
+    <div class="topbar">
+      <div class="logo">ClaudeCodeLex</div>
+      <div class="streak">🔥 7</div>
+    </div>
+    <div class="greeting">早安，宏盟 👋</div>
+    <div class="sub">今天的 5 個詞 / Today's 5 words</div>
+
+    <div class="section-title">Today's Picks</div>
+    <div class="h-scroll">
+      <div class="card-mini">
+        <span class="chip">Hooks</span>
+        <p class="term-en">PreToolUse</p>
+        <p class="term-zh">工具使用前</p>
+        <div class="speaker">🔊</div>
+      </div>
+      <div class="card-mini">
+        <span class="chip">MCP</span>
+        <p class="term-en">MCP Server</p>
+        <p class="term-zh">MCP 伺服器</p>
+        <div class="speaker">🔊</div>
+      </div>
+      <div class="card-mini">
+        <span class="chip">Skills</span>
+        <p class="term-en">Trigger</p>
+        <p class="term-zh">觸發</p>
+        <div class="speaker">🔊</div>
+      </div>
+    </div>
+
+    <button class="cta">開始今日學習 →</button>
+
+    <div class="section-title">最近學會</div>
+    <div class="list-row">
+      <div class="status-dot dot-mastered"></div>
+      <div class="row-text">
+        <div class="row-en">Slash Command</div>
+        <div class="row-zh">斜線指令</div>
+      </div>
+      <div>✅</div>
+    </div>
+    <div class="list-row">
+      <div class="status-dot dot-mastered"></div>
+      <div class="row-text">
+        <div class="row-en">Skill</div>
+        <div class="row-zh">技能</div>
+      </div>
+      <div>✅</div>
+    </div>
+  </div>
+  <div class="tabbar">
+    <div class="tab active"><span class="tab-icon">🏠</span>Today</div>
+    <div class="tab"><span class="tab-icon">📚</span>Browse</div>
+    <div class="tab"><span class="tab-icon">🎯</span>Quiz</div>
+    <div class="tab"><span class="tab-icon">⚙️</span>Settings</div>
+  </div>
+</div>
+
+<!-- 2. BROWSE -->
+<div class="phone">
+  <span class="phone-label">② Browse</span>
+  <div class="notch"></div>
+  <div class="screen">
+    <div class="topbar">
+      <div class="logo">Browse</div>
+    </div>
+    <input type="text" placeholder="🔍 搜尋 / Search terms…" style="padding:12px 14px;border:1px solid var(--divider);border-radius:12px;font-size:15px;margin-bottom:12px;outline:none;">
+    <div class="h-scroll">
+      <span class="chip" style="background:var(--brand-primary);color:white;">All</span>
+      <span class="chip">CLI</span>
+      <span class="chip">Hooks</span>
+      <span class="chip">MCP</span>
+      <span class="chip">Sub-agents</span>
+      <span class="chip">Plugins</span>
+      <span class="chip">Skills</span>
+      <span class="chip">Tools</span>
+    </div>
+    <div class="list-row">
+      <div class="status-dot dot-mastered"></div>
+      <div class="row-text">
+        <div class="row-en">Slash Command</div>
+        <div class="row-zh">斜線指令 · CLI</div>
+      </div>
+      <div class="speaker">🔊</div>
+    </div>
+    <div class="list-row">
+      <div class="status-dot dot-learning"></div>
+      <div class="row-text">
+        <div class="row-en">Hook</div>
+        <div class="row-zh">鉤子 · Hooks</div>
+      </div>
+      <div class="speaker">🔊</div>
+    </div>
+    <div class="list-row">
+      <div class="status-dot dot-learning"></div>
+      <div class="row-text">
+        <div class="row-en">PreToolUse</div>
+        <div class="row-zh">工具使用前 · Hooks</div>
+      </div>
+      <div class="speaker">🔊</div>
+    </div>
+    <div class="list-row">
+      <div class="status-dot dot-new"></div>
+      <div class="row-text">
+        <div class="row-en">MCP</div>
+        <div class="row-zh">模型上下文協定 · MCP</div>
+      </div>
+      <div class="speaker">🔊</div>
+    </div>
+    <div class="list-row">
+      <div class="status-dot dot-new"></div>
+      <div class="row-text">
+        <div class="row-en">Sub-agent</div>
+        <div class="row-zh">子代理人 · Sub-agents</div>
+      </div>
+      <div class="speaker">🔊</div>
+    </div>
+    <div class="list-row">
+      <div class="status-dot dot-new"></div>
+      <div class="row-text">
+        <div class="row-en">Artifact</div>
+        <div class="row-zh">產出物 · Artifacts</div>
+      </div>
+      <div class="speaker">🔊</div>
+    </div>
+  </div>
+  <div class="tabbar">
+    <div class="tab"><span class="tab-icon">🏠</span>Today</div>
+    <div class="tab active"><span class="tab-icon">📚</span>Browse</div>
+    <div class="tab"><span class="tab-icon">🎯</span>Quiz</div>
+    <div class="tab"><span class="tab-icon">⚙️</span>Settings</div>
+  </div>
+</div>
+
+<!-- 3. TERM DETAIL -->
+<div class="phone">
+  <span class="phone-label">③ Term Detail</span>
+  <div class="notch"></div>
+  <div class="screen">
+    <div class="topbar">
+      <div class="logo" style="color:var(--text);">‹ Back</div>
+      <div>⭐</div>
+    </div>
+    <div class="hero">
+      <span class="chip">Hooks</span>
+      <div class="hero-term">PreToolUse</div>
+      <div class="ipa">/priː tuːl juːs/</div>
+      <div class="speaker big" style="margin:0 auto;">🔊</div>
+    </div>
+    <div class="block">
+      <div class="block-label">翻譯 / Translation</div>
+      <div class="block-title">工具使用前 (hook)</div>
+      <p class="block-body">Claude 即將呼叫工具(Tool)前觸發的 hook，可用來驗證、記錄或阻擋。</p>
+    </div>
+    <div class="block">
+      <div class="block-label">實際用法 / In context</div>
+      <p class="block-body">「用 <b>PreToolUse</b> hook 阻擋 Bash 跑 rm -rf 指令。」</p>
+    </div>
+    <div class="block hint">
+      <div class="block-label" style="color:#92590f;">💡 記憶法</div>
+      <p class="block-body">Pre = 之前，Tool Use = 工具使用，組起來就是「工具使用前」。</p>
+    </div>
+    <div class="block">
+      <div class="block-label">相關詞 / Related</div>
+      <div class="h-scroll" style="margin: 0;">
+        <span class="chip">PostToolUse</span>
+        <span class="chip">Hook</span>
+        <span class="chip">SubagentStop</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 4. QUIZ -->
+<div class="phone">
+  <span class="phone-label">④ Quiz</span>
+  <div class="notch"></div>
+  <div class="screen">
+    <div class="topbar">
+      <div style="color:var(--text-sec);font-size:14px;">‹ Cancel</div>
+      <div style="color:var(--text-sec);font-size:14px;">3 / 5</div>
+    </div>
+    <div class="progress"><div></div></div>
+    <div style="text-align:center;color:var(--text-sec);font-size:13px;">看英文選母語</div>
+    <div class="question">
+      MCP
+      <div class="speaker" style="margin:12px auto 0 auto;">🔊</div>
+    </div>
+    <div class="options">
+      <div class="option">技能</div>
+      <div class="option correct">模型上下文協定</div>
+      <div class="option">插件市集</div>
+      <div class="option">子代理人</div>
+    </div>
+  </div>
+</div>
+
+<!-- 5. SETTINGS -->
+<div class="phone">
+  <span class="phone-label">⑤ Settings</span>
+  <div class="notch"></div>
+  <div class="screen">
+    <div class="topbar">
+      <div class="logo">Settings</div>
+    </div>
+    <div class="section-title">Learning</div>
+    <div class="settings-section">
+      <div class="settings-row"><span>UI Language</span><span>繁體中文 ›</span></div>
+      <div class="settings-row"><span>Native Language</span><span>繁體中文 ›</span></div>
+      <div class="settings-row"><span>Daily Goal</span><span>5 詞 ›</span></div>
+    </div>
+    <div class="section-title">Audio</div>
+    <div class="settings-section">
+      <div class="settings-row"><span>Voice</span><span>en-US (Samantha) ›</span></div>
+      <div class="settings-row"><span>Speed</span><span>Normal ›</span></div>
+      <div class="settings-row"><span>Auto-play on open</span><span>● ON</span></div>
+    </div>
+    <div class="section-title">Appearance</div>
+    <div class="settings-section">
+      <div class="settings-row"><span>Theme</span><span>Auto ›</span></div>
+    </div>
+    <div class="section-title">About</div>
+    <div class="settings-section">
+      <div class="settings-row"><span>Version</span><span>1.0.0</span></div>
+      <div class="settings-row"><span>GitHub Repo</span><span>›</span></div>
+      <div class="settings-row"><span>Privacy Policy</span><span>›</span></div>
+      <div class="settings-row"><span>Send Feedback</span><span>›</span></div>
+    </div>
+    <p style="text-align:center;font-size:11px;color:var(--text-sec);margin-top:16px;">
+      Claude Code is a trademark of Anthropic PBC.<br>
+      This app is unofficial and made with ❤️ by 王宏盟.
+    </p>
+  </div>
+  <div class="tabbar">
+    <div class="tab"><span class="tab-icon">🏠</span>Today</div>
+    <div class="tab"><span class="tab-icon">📚</span>Browse</div>
+    <div class="tab"><span class="tab-icon">🎯</span>Quiz</div>
+    <div class="tab active"><span class="tab-icon">⚙️</span>Settings</div>
+  </div>
+</div>
+
+</body>
+</html>

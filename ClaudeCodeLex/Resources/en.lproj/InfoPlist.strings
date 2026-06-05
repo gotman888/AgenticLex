@@ -1,0 +1,3 @@
+/* Localized Info.plist usage strings — Shadow Read (Speech framework). */
+"NSMicrophoneUsageDescription" = "AgenticLex uses the microphone for Shadow Read, so you can practise saying a term out loud. Audio is processed on your device.";
+"NSSpeechRecognitionUsageDescription" = "AgenticLex recognises the word you say during Shadow Read — on your device — to give friendly pronunciation feedback.";

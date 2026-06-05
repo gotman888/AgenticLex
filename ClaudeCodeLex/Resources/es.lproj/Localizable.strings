@@ -1,0 +1,292 @@
+// Español (es)
+
+"app.name"     = "AgenticLex";
+"app.tagline"  = "Domina el idioma del coding con IA";
+
+"today.tab"    = "Hoy";
+"browse.tab"   = "Explorar";
+"quiz.tab"     = "Quiz";
+"settings.tab" = "Ajustes";
+
+"today.subtitle"       = "Lexi te preparó unas palabras ☕";
+"today.listen"         = "Modo escucha";
+"today.random"         = "Sorpréndeme";
+"today.allDone"        = "¡Listo por hoy! 🌱 Descansa";
+"today.wotd"           = "Palabra del día";
+"today.greet.morning"   = "¡Buenos días! Vamos por algo nuevo";
+"today.greet.noon"      = "¡Hola! ¿Un par al mediodía?";
+"today.greet.afternoon" = "Buenas tardes 🚀";
+"today.greet.evening"   = "Una más y a descansar";
+"today.greet.night"     = "Lexi sigue despierta, ¿tú? 🦉";
+"today.picks"          = "Recomendados";
+"today.start"          = "Empezar a aprender";
+"today.recentMastered" = "Recién dominadas";
+"today.noMastered"     = "Tu primera palabra dominada quedará aquí siempre 🌱";
+
+"browse.searchPrompt"  = "Buscar términos…";
+"browse.noResults" = "Ningún término coincide con tu búsqueda. Prueba con otra palabra.";
+
+"category.all"        = "Todos";
+
+"detail.translation"  = "Traducción";
+"detail.example"      = "En contexto";
+"detail.memoryHook"   = "Truco mnemotécnico";
+"detail.realUse"      = "Uso real";
+"detail.commonConfusion" = "Fácil de confundir";
+"detail.related"      = "Relacionados";
+"detail.fav"          = "Favorito";
+"detail.unfav"        = "Quitar favorito";
+"detail.markMastered" = "Marcar como dominada";
+"detail.share"        = "Compartir";
+
+// Concept Map
+"conceptMap.title" = "Mapa de conceptos";
+"conceptMap.hint"  = "Toca un nodo para explorar términos relacionados";
+
+"quiz.setup.count"     = "Número de preguntas";
+"quiz.setup.direction" = "Tipo";
+"quiz.setup.start"     = "Empezar";
+"quiz.dir.enToL1"      = "Inglés → Mi idioma";
+"quiz.dir.l1ToEn"      = "Mi idioma → Inglés";
+"quiz.dir.mixed"       = "Mixto";
+"quiz.result.perfect"  = "¡Perfecto! Lexi está orgullosa 🎉";
+"quiz.result.good"     = "¡Muy bien!";
+"quiz.result.tryAgain" = "Tranquilo, otra vez 💪";
+"quiz.result.backHome" = "Volver al inicio";
+
+"review.next" = "Siguiente";
+"review.done" = "¡Terminaste por hoy!";
+
+"settings.section.learning"   = "APRENDIZAJE";
+"settings.section.audio"      = "AUDIO";
+"settings.section.appearance" = "APARIENCIA";
+"settings.section.data"       = "DATOS";
+"settings.section.about"      = "ACERCA DE";
+
+"settings.uiLanguage"     = "Idioma de la app";
+"settings.nativeLanguage" = "Mi idioma nativo";
+"settings.dailyGoal"      = "Meta diaria";
+"settings.speed"          = "Velocidad";
+"settings.autoplay"       = "Reproducir al abrir";
+"settings.theme"          = "Tema";
+"settings.theme.auto"     = "Automático";
+"settings.theme.light"    = "Claro";
+"settings.theme.dark"     = "Oscuro";
+"settings.resetAll"       = "Reiniciar progreso";
+"settings.resetConfirm"   = "Se borrará todo tu progreso. Esto no se puede deshacer.";
+"settings.version"        = "Versión";
+"settings.github"         = "Código abierto en GitHub";
+"settings.privacy"        = "Política de privacidad";
+"settings.feedback"       = "Enviar feedback";
+"detail.aiTranslation" = "Traducción con IA — sin revisar aún";
+"detail.report" = "Informar de un problema o sugerir una mejora";
+"feedback.subject" = "Comentarios de AgenticLex";
+"report.intro" = "¿Qué se podría mejorar? Descríbelo abajo y envía. (Conserva los datos del final; nos ayudan a ayudarte.)";
+
+// Notifications
+"settings.section.notifications" = "NOTIFICACIONES";
+"settings.notify.daily"          = "Recordatorio diario";
+"settings.notify.time"           = "Hora del recordatorio";
+"notify.daily.title"             = "Lexi te extraña 🦉";
+"notify.daily.body"              = "¿Unas palabras hoy? Lexi te espera.";
+"notify.daily.body.streak"       = "¡Mantén tu racha de %d días! 🔥";
+
+"common.cancel" = "Cancelar";
+"common.ok"     = "OK";
+"common.retry"  = "Reintentar";
+
+"a11y.playPronunciation" = "Reproducir pronunciación";
+
+// Onboarding
+"onboarding.back"            = "Atrás";
+"onboarding.next"            = "Siguiente";
+"onboarding.start"           = "Empezar";
+"onboarding.disclaimer.title" = "App independiente — no afiliada a Anthropic";
+"onboarding.disclaimer.body"  = "AgenticLex es una app no oficial. Claude™ y Claude Code™ son marcas de Anthropic PBC; Cursor™ de Anysphere Inc. Todas las marcas se usan solo con fines descriptivos.";
+"onboarding.lang.title"      = "Elige tus idiomas";
+"onboarding.lang.subtitle"   = "Los dos ajustes están separados a propósito. Muchos quieren interfaz en inglés con traducción en su idioma nativo.";
+"onboarding.uiLang.label"    = "Idioma de la app";
+"onboarding.uiLang.help"     = "Menús, botones, etiquetas.";
+"onboarding.nativeLang.label" = "Mi idioma nativo";
+"onboarding.nativeLang.help"  = "Para la traducción, definición y trucos junto a cada término en inglés.";
+"onboarding.comingSoon"      = "Próximamente";
+"onboarding.goal.title"      = "Meta diaria";
+"onboarding.goal.subtitle"   = "¿Cuántas palabras al día? Puedes cambiarlo cuando quieras.";
+"onboarding.goal.relaxed"    = "palabras / día — A tu ritmo";
+"onboarding.goal.regular"    = "palabras / día — Recomendado";
+"onboarding.goal.serious"    = "palabras / día — En serio";
+"onboarding.goal.intense"    = "palabras / día — A tope";
+
+// Tip Jar
+"settings.section.support"   = "APOYAR EL DESARROLLO";
+"tipjar.title"               = "Invítame un café";
+"tipjar.subtitle"            = "AgenticLex es gratis para siempre. Si te ayuda, una propina mantiene viva la app.";
+"tipjar.tier.small"          = "Gracias rápidas";
+"tipjar.tier.medium"         = "Apoya un mes de actualizaciones";
+"tipjar.tier.large"          = "Patrocina una temporada";
+"tipjar.lifetimeFmt"         = "Has contribuido ~$%.2f — gracias 🙏";
+"tipjar.note"                = "100% voluntario. Ninguna función está bloqueada.";
+"tipjar.unavailable"         = "No se pudieron cargar las opciones. Revisa tu conexión e inténtalo de nuevo.";
+"tipjar.thanks.title"        = "Gracias ❤️";
+"tipjar.thanks.body"         = "Tu apoyo mantiene AgenticLex gratis y en crecimiento.";
+
+// Term detail
+"term.englishOnly.note"      = "La industria usa el inglés";
+
+// Onboarding
+"onboarding.lexi.intro"     = "¡Hola! Soy Lexi, tu compañera 🦉";
+
+// Audio
+"audio.speed.label"          = "Velocidad de voz";
+"audio.speed.slow"           = "Lenta";
+"audio.speed.normal"         = "Normal";
+"audio.speed.fast"           = "Rápida";
+"a11y.longPressForSpeed"     = "Mantén pulsado para elegir velocidad";
+
+// Listen Mode
+"listen.tab"      = "Modo escucha";
+"listen.title"    = "Modo escucha";
+"listen.subtitle" = "Solo audio. No mires la pantalla.";
+"listen.start"    = "Empezar";
+"listen.stop"     = "Parar";
+"listen.hint"     = "Reproduce en segundo plano. Auriculares recomendados.";
+
+// Celebration
+"celebration.cool" = "¡Genial!";
+
+// Achievements
+"achv.title"          = "Logros";
+"achv.subtitle.fmt"   = "%d / %d desbloqueados";
+"achv.firstWord.title" = "Primera palabra";
+"achv.firstWord.desc"  = "Domina la primera";
+"achv.bookworm.title"  = "Ratón de biblioteca";
+"achv.bookworm.desc"   = "10 dominadas";
+"achv.scholar.title"   = "Estudioso";
+"achv.scholar.desc"    = "30 dominadas";
+"achv.master.title"    = "Maestro";
+"achv.master.desc"     = "Todas dominadas";
+"achv.spark.title"     = "Chispa";
+"achv.spark.desc"      = "Racha de 3 días";
+"achv.flame.title"     = "Llama";
+"achv.flame.desc"      = "Racha de 7 días";
+"achv.blaze.title"     = "Hoguera";
+"achv.blaze.desc"      = "Racha de 30 días";
+"achv.nightOwl.title"  = "Búho nocturno";
+"achv.nightOwl.desc"   = "Estudiar 0-4h";
+"achv.earlyBird.title" = "Madrugador";
+"achv.earlyBird.desc"  = "Estudiar 5-8h";
+"achv.coffeeHelper.title" = "Amigo del café";
+"achv.coffeeHelper.desc"  = "Apoyo a Lexi";
+
+// ===== AI Boost =====
+"aiboost.title"           = "Mejora con IA";
+"aiboost.active"          = "Activo";
+"aiboost.intro"           = "Usa tus propias API keys para potenciar a Lexi. No vemos tus claves — las solicitudes van directo al proveedor.";
+"aiboost.voice.section"   = "VOCES MEJORES";
+"aiboost.voice.footer"    = "Las voces en la nube suenan mucho más naturales. El coste va a tu cuenta.";
+"aiboost.chat.section"    = "PREGUNTAR A LEXI";
+"aiboost.chat.footer"     = "Conversa de verdad sobre cualquier término con tu IA preferida.";
+"aiboost.free"            = "Gratis";
+"aiboost.keyPlaceholder"  = "Pega tu API key";
+"aiboost.save"            = "Guardar";
+"aiboost.getKey"          = "Conseguir clave";
+"aiboost.voicePicker"     = "Voz";
+"aiboost.modelPicker"     = "Modelo";
+"aiboost.test"            = "Probar voz";
+"aiboost.testing"         = "Probando…";
+"aiboost.testOK"          = "¡Genial! ✨";
+"aiboost.testFailed"      = "Falló — revisa la clave";
+"aiboost.privacy"         = "Las claves viven en el llavero de iOS. Las solicitudes van directo al proveedor; los servidores de AgenticLex no participan.";
+
+"aiboost.disclosure.title" = "Cómo funciona BYOK";
+"aiboost.disclosure.body"  = "Tus API keys se guardan localmente en el llavero de iOS. AgenticLex nunca las ve. Todas las solicitudes van directo al proveedor de IA que elijas. Revisa la política de privacidad del proveedor.";
+
+"ai.cost.free"             = "Gratis · sin conexión";
+"ai.cost.openaiTTS"        = "~$0.0003 por palabra · facturado por OpenAI";
+"ai.cost.elevenlabs"       = "~$0.003 por palabra · facturado por ElevenLabs";
+
+// ===== Ask Lexi =====
+"askLexi.title"            = "Preguntar a Lexi";
+"askLexi.button.title"     = "💬 Preguntar a Lexi sobre esto";
+"askLexi.button.hint"      = "Conversa con Lexi usando tu API key";
+"askLexi.intro"            = "¡Hola! Pregúntame lo que sea sobre este término 🦉";
+"askLexi.inputPlaceholder" = "Pregunta lo que sea…";
+"askLexi.errorTitle"       = "No pude conectarme con la IA";
+"askLexi.qp.eli5"          = "Explica simple";
+"askLexi.qp.examples"      = "Más ejemplos";
+"askLexi.qp.code"          = "Muestra código";
+"askLexi.qp.compare"       = "Comparar similares";
+"askLexi.poweredBy.claude" = "Con Claude · tu clave";
+"askLexi.poweredBy.openai" = "Con GPT · tu clave";
+"askLexi.poweredBy.gemini" = "Con Gemini · tu clave";
+
+// Atajos de Siri
+"siri.wotd.title"   = "Palabra del día";
+"siri.wotd.desc"    = "Abre AgenticLex en la palabra del día";
+"siri.listen.title" = "Modo escucha";
+"siri.listen.desc"  = "Inicia el Modo escucha en AgenticLex";
+
+// Ruta de aprendizaje
+"path.title"             = "Ruta de aprendizaje";
+"path.intro"             = "Domina las palabras nivel a nivel, a tu ritmo.";
+"path.levelNumFmt"       = "Nivel %d";
+"path.level.foundations" = "Fundamentos";
+"path.level.core"        = "Conceptos clave";
+"path.level.advanced"    = "Avanzado";
+"path.progressFmt"       = "%d / %d dominadas";
+"path.complete"          = "¡Completado!";
+
+// Lectura en eco
+"today.shadow"           = "Lectura en eco";
+"shadow.intro"           = "Escucha cada término y repítelo. Lexi practica aquí contigo.";
+"shadow.start"           = "Empezar";
+"shadow.replay"          = "Escuchar otra vez";
+"shadow.tapToSpeak"      = "Toca y dilo";
+"shadow.listening"       = "Escuchando…";
+"shadow.heardFmt"        = "Lexi escuchó: %@";
+"shadow.great"           = "¡Clavado! 🎉";
+"shadow.close"           = "¡Casi! Buen intento.";
+"shadow.tryAgain"        = "Difícil — ¡sigue así! 💪";
+"shadow.finish"          = "Terminar";
+"shadow.summaryFmt"      = "¡Practicaste %d términos!";
+"shadow.summaryGreatFmt" = "%d sonaron perfectos 🌟";
+"shadow.again"           = "Practicar otra vez";
+"shadow.unavailable"     = "La Lectura en eco necesita reconocimiento de voz en el dispositivo, que este no admite. Las demás formas de aprender siguen aquí. 🦉";
+
+// Actualización del diccionario (OTA)
+"settings.dict.autoUpdate" = "Actualizar diccionario automáticamente";
+"settings.dict.note"       = "Si se activa, busca términos nuevos en GitHub. Desactivado por defecto: la app funciona sin conexión.";
+"settings.dict.checking"   = "Comprobando…";
+"settings.dict.upToDate"   = "El diccionario está al día";
+"settings.dict.updated"    = "Diccionario actualizado: se aplica al reiniciar";
+"settings.dict.thanks" = "🌱 Gracias a los comentarios — tus reportes mejoran el diccionario.";
+"settings.dict.failed"     = "No se pudo buscar actualizaciones";
+
+
+// Aviso de envio de datos a IA (Apple Guideline 5.1.1(i) / 5.1.2(i))
+"aidisclosure.nav.title" = "Aviso de envío de datos a IA";
+"aidisclosure.header.title" = "Por favor lee antes de usar funciones de IA";
+"aidisclosure.header.body" = "Para cumplir con las normas de revisión de privacidad de Apple, debemos informarte claramente qué datos se envían, a quién y para qué antes de que uses cualquier función de IA.";
+"aidisclosure.sec.send.title" = "Qué enviamos";
+"aidisclosure.sec.send.body" = "Solo los **mensajes de texto** que escribes y envías al asistente de IA en AgenticLex. En conversaciones de múltiples turnos, también se envía el historial necesario para que la IA mantenga el contexto.";
+"aidisclosure.sec.recipients.title" = "Quién recibe los datos";
+"aidisclosure.sec.recipients.body" = "Según los proveedores que actives en «Ajustes → AI Boost», hasta cuatro servicios de IA de terceros pueden recibir tu entrada:\n\n• **Anthropic, PBC** (San Francisco, CA, EE. UU.) — Claude API para conversación con IA\n• **OpenAI, L.L.C.** (San Francisco, CA, EE. UU.) — GPT para conversación; TTS para reproducción de voz\n• **Google LLC** (Mountain View, CA, EE. UU.) — Gemini API para conversación con IA\n• **ElevenLabs Inc.** (Nueva York, NY, EE. UU.) — TTS para reproducción de voz\n\nSolo los proveedores que configures activamente con tu propia clave de API reciben datos. No se envían datos a proveedores que no hayas activado.";
+"aidisclosure.sec.purpose.title" = "Finalidad";
+"aidisclosure.sec.purpose.body" = "**Únicamente para generar la respuesta de IA a tu solicitud actual.** Por defecto, ningún proveedor usa los datos de la API para entrenar modelos; los datos se conservan brevemente (hasta ~30 días) para detección de abuso y luego se eliminan.";
+"aidisclosure.sec.notSent.title" = "Datos que NO enviamos";
+"aidisclosure.sec.notSent.body" = "Tu Apple ID, identificador de dispositivo, nombre, contactos, ubicación, fotos e IDFA nunca se transmiten. Todas las transmisiones usan cifrado TLS.";
+"aidisclosure.sec.choice.title" = "Tu elección";
+"aidisclosure.sec.choice.body" = "Elegir «**No acepto**» desactiva las funciones de IA pero mantiene el resto de la app totalmente utilizable.\n\nPuedes retirar tu consentimiento en cualquier momento en **Ajustes → Privacidad → Consentimiento de envío de datos a IA**.";
+"aidisclosure.button.privacy" = "Ver política de privacidad completa";
+"aidisclosure.button.agree" = "Aceptar y continuar";
+"aidisclosure.button.decline" = "No acepto, desactivar IA";
+"aidisclosure.settings.section" = "Privacidad";
+"aidisclosure.settings.row.title" = "Consentimiento de envío de datos a IA";
+"aidisclosure.settings.status.accepted" = "Aceptado";
+"aidisclosure.settings.status.notAccepted" = "No aceptado";
+"aidisclosure.settings.revoke" = "Retirar";
+"aidisclosure.settings.confirm.title" = "¿Retirar consentimiento?";
+"aidisclosure.settings.confirm.message" = "Las funciones de IA se desactivarán de inmediato. Puedes volver a aceptar más adelante.";
+"aidisclosure.settings.confirm.cancel" = "Cancelar";
+"aidisclosure.settings.confirm.revoke" = "Retirar";
+"aidisclosure.error.notConsented" = "Las funciones de IA requieren consentimiento. Vuelve a activarlas en «Ajustes → Privacidad».";
